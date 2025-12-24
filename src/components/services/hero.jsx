@@ -1,56 +1,43 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 
 const Hero = () => {
     return (
-        <div className="relative pt-32 pb-20 px-4 md:px-12 flex flex-col items-center justify-center text-center overflow-hidden">
-
-            {/* Ambient Background Glow */}
-            <motion.div
-                animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
-                transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-600/20 blur-[120px] rounded-full pointer-events-none"
-            ></motion.div>
-
-            <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                className="relative z-10 max-w-4xl mx-auto"
+        <div className="relative w-full h-[85vh] flex items-center justify-center overflow-hidden bg-black">
+            {/* Background Image with Overlay */}
+            <div
+                className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat z-0 scale-105 animate-[pulse_10s_ease-in-out_infinite]"
+                style={{ backgroundImage: "url('/assets/services/bg.jpg')" }}
             >
-                <div className="inline-block px-4 py-1 mb-6 rounded-full bg-blue-900/30 border border-blue-500/30 text-blue-400 text-sm font-semibold tracking-wide">
-                    Future-Ready IT Services
-                </div>
-                <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight tracking-tight">
-                    Transforming Visions <br />
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 animate-gradient-x">
-                        Into Digital Reality
-                    </span>
+                <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-black"></div>
+            </div>
+
+            {/* Content */}
+            <div className="relative z-10 text-center px-4 max-w-6xl mx-auto flex flex-col items-center mt-20">
+                <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 leading-tight tracking-tight">
+                    Expert Services That <br />
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 animate-gradient-x">
+                        Accelerate Your Digital
+                    </span> <br />
+                    Transformation
                 </h1>
-                <p className="text-gray-400 text-lg md:text-xl mb-10 max-w-2xl mx-auto leading-relaxed">
-                    We deliver cutting-edge technology solutions that drive innovation, efficiency, and growth for your business.
+
+                <p className="text-gray-300 text-lg md:text-xl max-w-3xl mb-10 leading-relaxed font-light">
+                    Unlock the full potential of your business with our cutting-edge technology solutions.
+                    From cloud security to network automation, we provide the expertise you need.
                 </p>
 
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 shadow-[0_0_20px_rgba(37,99,235,0.3)] hover:shadow-[0_0_30px_rgba(37,99,235,0.5)] transform hover:-translate-y-1">
-                        Explore Our Services
-                    </button>
-                    <button className="bg-transparent border border-gray-700 hover:border-white text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 transform hover:-translate-y-1">
-                        Contact Sales
-                    </button>
-                </div>
-            </motion.div>
+                <button className="group relative inline-flex items-center justify-center px-8 py-4 font-bold text-white transition-all duration-200 bg-blue-600 font-lg rounded-full hover:bg-blue-700 hover:shadow-[0_0_30px_rgba(37,99,235,0.6)] focus:outline-none ring-offset-2 focus:ring-2 ring-blue-400">
+                    <span className="mr-2">Get Started</span>
+                    <svg className="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+                </button>
+            </div>
 
             {/* Scroll Indicator */}
-            <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1, y: [0, 10, 0] }}
-                transition={{ delay: 1, duration: 2, repeat: Infinity }}
-                className="absolute bottom-8 left-1/2 -translate-x-1/2 text-gray-500 flex flex-col items-center gap-2"
-            >
-                <span className="text-xs uppercase tracking-widest">Scroll</span>
-                <svg className="w-5 h-5 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7-7-7"></path></svg>
-            </motion.div>
+            <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <svg className="w-6 h-6 text-gray-500" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </div>
         </div>
     );
 };
