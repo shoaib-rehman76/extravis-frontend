@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const CloudSecurity = () => {
     return (
@@ -8,17 +9,28 @@ const CloudSecurity = () => {
                 {/* 1. Header Section */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     {/* Image Side */}
-                    <div className="relative group">
+                    <motion.div
+                        initial={{ opacity: 0, x: -50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8 }}
+                        className="relative group"
+                    >
                         <div className="absolute -inset-2 bg-purple-600/30 blur-2xl rounded-full opacity-40 group-hover:opacity-60 transition duration-700"></div>
                         <img
                             src="/assets/services/cloud-security.svg"
                             alt="Cloud Security Automation"
                             className="relative w-full h-auto object-contain rounded-xl shadow-2xl z-10"
                         />
-                    </div>
+                    </motion.div>
 
                     {/* Text Side */}
-                    <div>
+                    <motion.div
+                        initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8 }}
+                    >
                         <div className="inline-block px-3 py-1 bg-blue-900/30 border border-blue-500/30 rounded-full text-blue-400 text-xs font-semibold mb-6">
                             Cloud & Security Automation
                         </div>
@@ -32,29 +44,47 @@ const CloudSecurity = () => {
                             Modern cloud environments are too complex and dynamic for manual management.
                             Our cloud and security automation services help you build resilient, scalable, and secure cloud infrastructure that adapts to your business needs automatically.
                         </p>
-                    </div>
+                    </motion.div>
                 </div>
 
                 {/* 2. Why it matters & Approach */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div className="bg-[#0f0f0f]/80 backdrop-blur-sm p-8 rounded-2xl border border-gray-800 hover:border-purple-500/50 transition-colors">
+                    <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6, delay: 0.2 }}
+                        className="bg-[#0f0f0f]/80 backdrop-blur-sm p-8 rounded-2xl border border-gray-800 hover:border-purple-500/50 transition-colors"
+                    >
                         <h3 className="text-xl font-bold text-white mb-4">Why Cloud Automation Matters</h3>
                         <p className="text-gray-400 text-sm leading-relaxed">
                             Cloud environments change constantly—new services launch, security threats evolve, compliance requirements update, and business needs shift.
                             Manual management can't keep pace with this rate of change, leading to security gaps, operational inefficiencies, and missed opportunities.
                         </p>
-                    </div>
-                    <div className="bg-[#0f0f0f]/80 backdrop-blur-sm p-8 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6, delay: 0.4 }}
+                        className="bg-[#0f0f0f]/80 backdrop-blur-sm p-8 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors"
+                    >
                         <h3 className="text-xl font-bold text-white mb-4">Our Approach</h3>
                         <p className="text-gray-400 text-sm leading-relaxed">
                             We start by understanding your current cloud architecture, security posture, and operational challenges.
                             Then we design and implement automation solutions that address your immediate needs while building a foundation for future growth and evolution.
                         </p>
-                    </div>
+                    </motion.div>
                 </div>
 
                 {/* 3. Features & IaC */}
-                <div className="bg-[#0a0a0a]/90 backdrop-blur-md rounded-3xl border border-gray-800 p-8 md:p-12">
+                <motion.div
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8 }}
+                    className="bg-[#0a0a0a]/90 backdrop-blur-md rounded-3xl border border-gray-800 p-8 md:p-12"
+                >
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                         {/* Key Features */}
                         <div>
@@ -100,10 +130,15 @@ const CloudSecurity = () => {
                             </ul>
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
                 {/* 4. Benefits */}
-                <div>
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1 }}
+                >
                     <h3 className="text-2xl font-bold text-white mb-8">Benefits You'll Experience</h3>
                     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
                         {[
@@ -153,16 +188,20 @@ const CloudSecurity = () => {
                                 )
                             }
                         ].map((benefit, i) => (
-                            <div key={i} className="bg-[#111] p-6 rounded-xl border border-gray-800 hover:bg-[#161616] transition-colors group">
+                            <motion.div
+                                key={i}
+                                whileHover={{ scale: 1.05 }}
+                                className="bg-[#111] p-6 rounded-xl border border-gray-800 hover:bg-[#161616] transition-colors group"
+                            >
                                 <div className="mb-4 bg-gray-900/50 w-14 h-14 rounded-lg flex items-center justify-center group-hover:bg-gray-800 transition-colors">
                                     {benefit.icon}
                                 </div>
                                 <h4 className="text-white font-bold mb-2 text-sm">{benefit.title}</h4>
                                 <p className="text-gray-500 text-xs leading-relaxed">{benefit.desc}</p>
-                            </div>
+                            </motion.div>
                         ))}
                     </div>
-                </div>
+                </motion.div>
 
             </div>
         </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const NetworkAutomation = () => {
     return (
@@ -8,7 +9,13 @@ const NetworkAutomation = () => {
                 {/* 1. Header Section */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     {/* Text Content */}
-                    <div className="order-2 lg:order-1">
+                    <motion.div
+                        initial={{ opacity: 0, x: -50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8 }}
+                        className="order-2 lg:order-1"
+                    >
                         <div className="inline-block px-3 py-1 bg-blue-900/30 border border-blue-500/30 rounded-full text-blue-400 text-xs font-semibold mb-6">
                             Network Automation
                         </div>
@@ -21,34 +28,52 @@ const NetworkAutomation = () => {
                         <p className="text-gray-400 text-lg leading-relaxed mb-6">
                             Modern cloud environments are too complex and dynamic for manual network automation. It isn't just about efficiency—it's about reliability, consistency, and enabling your network to support business agility rather than constraining it.
                         </p>
-                    </div>
+                    </motion.div>
 
                     {/* Image Content */}
-                    <div className="order-1 lg:order-2 relative group">
+                    <motion.div
+                        initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8 }}
+                        className="order-1 lg:order-2 relative group"
+                    >
                         <div className="absolute -inset-4 bg-blue-600/20 blur-3xl rounded-full opacity-30 group-hover:opacity-50 transition duration-700"></div>
                         <img
                             src="/assets/services/network-auto.svg"
                             alt="Network Automation"
                             className="w-full h-auto object-contain rounded-xl relative z-10"
                         />
-                    </div>
+                    </motion.div>
                 </div>
 
                 {/* 2. Imperative & Approach Cards */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div className="bg-[#0f0f0f]/80 backdrop-blur-sm p-8 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
+                    <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6, delay: 0.2 }}
+                        className="bg-[#0f0f0f]/80 backdrop-blur-sm p-8 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors"
+                    >
                         <h4 className="text-xl font-bold text-white mb-4 leading-tight">The Network Automation Imperative</h4>
                         <p className="text-gray-400 text-sm leading-relaxed">
                             Modern networks are too complex for manual management. With multiple vendors, cloud connections, security requirements, and constant change, manual processes create bottlenecks, errors, and security vulnerabilities.
                         </p>
-                    </div>
+                    </motion.div>
 
-                    <div className="bg-[#0f0f0f]/80 backdrop-blur-sm p-8 rounded-2xl border border-gray-800 hover:border-purple-500/50 transition-colors">
+                    <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6, delay: 0.4 }}
+                        className="bg-[#0f0f0f]/80 backdrop-blur-sm p-8 rounded-2xl border border-gray-800 hover:border-purple-500/50 transition-colors"
+                    >
                         <h4 className="text-xl font-bold text-white mb-4 leading-tight">Our Network Automation Approach</h4>
                         <p className="text-gray-400 text-sm leading-relaxed">
                             We don't just write scripts; we build intelligent automation platforms. Our approach focuses on intent-based networking, where you define the desired state, and the automation ensures the network matches that state.
                         </p>
-                    </div>
+                    </motion.div>
                 </div>
 
             </div>
