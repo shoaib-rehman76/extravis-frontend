@@ -23,6 +23,9 @@ const RoutesIndex = () => {
           <Services />
         </Layout>
       ),
+
+    },
+    {
       path: "/products",
       element: (
         <Layout>
