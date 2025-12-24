@@ -9,7 +9,7 @@ const testimonials = [
     {
         id: 1,
         company: "MonetX",
-        review: "Extravis MonetX helped us identify and resolve network issues 3x faster than our previous solution, directly contributing to our best uptime performance in company history.\" — Network Operations Manager, Major Telecom Provider",
+        review: "Gain real‑time visibility and control across your entire network and cloud infrastructure. MonetX integrates data centre observability, cloud management and hardware/software monitoring, providing interactive dashboards and vendor‑agnostic integration",
         result: "Telecommunications Leader Achieves 99.9% Uptime.",
         user: {
             name: "Patrick, Lubbock, TX",
@@ -19,8 +19,8 @@ const testimonials = [
     },
     {
         id: 2,
-        company: "MonetX", // Using consistent naming based on image
-        review: "Extravis MonetX helped us identify and resolve network issues 3x faster than our previous solution, directly contributing to our best uptime performance in company history.\" — Network Operations Manager, Major Telecom Provider",
+        company: "SupportX", // Using consistent naming based on image
+        review: "Automate ticket intake, routing and resolution to deliver faster support and higher satisfaction. AI analyses incoming requests, matches them to the right experts, tracks SLAs and captures knowledge for continuous improvement.",
         result: "Telecommunications Leader Achieves 99.9% Uptime.",
         user: {
             name: "Patrick, Lubbock, TX",
@@ -30,8 +30,8 @@ const testimonials = [
     },
     {
         id: 3,
-        company: "MonetX",
-        review: "Extravis MonetX helped us identify and resolve network issues 3x faster than our previous solution, directly contributing to our best uptime performance in company history.\" — Network Operations Manager, Major Telecom Provider",
+        company: "GreenX",
+        review: "Optimise data‑centre energy usage and track carbon footprints with AI‑powered analytics. GreenX uses real‑time monitoring and intelligent workload management to reduce costs and meet environmental goals.",
         result: "Telecommunications Leader Achieves 99.9% Uptime.",
         user: {
             name: "Patrick, Lubbock, TX",
@@ -41,8 +41,8 @@ const testimonials = [
     },
     {
         id: 4,
-        company: "MonetX",
-        review: "Extravis MonetX helped us identify and resolve network issues 3x faster than our previous solution, directly contributing to our best uptime performance in company history.\" — Network Operations Manager, Major Telecom Provider",
+        company: "MapX",
+        review: "Streamline workflow management, resource planning and project tracking with a unified tool. MapX centralises project information and accelerates execution across teams.",
         result: "Telecommunications Leader Achieves 99.9% Uptime.",
         user: {
             name: "Patrick, Lubbock, TX",
@@ -123,7 +123,7 @@ const CustomersSection = () => {
                                             </span>
                                         </div>
 
-                                        <p className="text-gray-300 text-sm leading-relaxed mb-6 line-clamp-6">
+                                        <p className="text-gray-300 text-sm leading-relaxed mb-6 line-clamp-4">
                                             {item.review}
                                         </p>
 
