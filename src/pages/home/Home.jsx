@@ -1,7 +1,9 @@
 import AutomationAndDigitalSolution from "../../components/home/AutomationAndDigitalSolution";
 import BlogSection from "../../components/home/BlogSection";
 import CustomersSection from "../../components/home/CustomersSection";
+import EmailSection from "../../components/home/EmailSection";
 import FoundedSection from "../../components/home/FoundedSection";
+import GetStartedSection from "../../components/home/GetStartedSection";
 import { HeroSection } from "../../components/home/HeroSection";
 import HightLightSection from "../../components/home/HightLightSection";
 import LeadingOrganization from "../../components/home/LeadingOrganization";
@@ -35,6 +37,12 @@ export const Home = () => {
       </div>
       <div className="my-10">
         <BlogSection />
+      </div>
+      <div className="my-10">
+        <GetStartedSection />
+      </div>
+      <div className="my-10">
+        <EmailSection />
       </div>
     </>
   );
