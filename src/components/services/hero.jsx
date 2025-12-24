@@ -1,8 +1,7 @@
-import React from 'react';
 
 const Hero = () => {
     return (
-        <div className="relative w-full h-[85vh] flex items-center justify-center overflow-hidden bg-black">
+        <div className="relative w-full h-screen flex items-center justify-center overflow-hidden bg-black">
             {/* Background Image with Overlay */}
             <div
                 className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat z-0 scale-105 animate-[pulse_10s_ease-in-out_infinite]"

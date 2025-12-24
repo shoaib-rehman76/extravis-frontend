@@ -18,9 +18,9 @@ const LeadingOrganization = () => {
           <div className="group relative rounded-2xl overflow-hidden border border-white/10 bg-[#0A0A0E] h-[300px] md:h-full">
             <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             <img
-              src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1472&h=600&auto=format&fit=crop"
+              src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=50&w=1472&h=600&auto=format&fit=crop"
               alt="Cloud Technology"
-              className="w-full h-[50%] object-cover opacity-60 group-hover:scale-110 transition-transform duration-700"
+              className="w-full object-cover opacity-100 group-hover:scale-110 transition-transform duration-700"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
 
@@ -38,9 +38,9 @@ const LeadingOrganization = () => {
             <div className="group relative rounded-2xl overflow-hidden border border-white/10 bg-[#0A0A0E] flex-1 min-h-[250px]">
               <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-pink-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <img
-                src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1632&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=60&w=1600&auto=format&fit=crop"
                 alt="AI Intelligence"
-                className="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700"
+                className="w-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
 
@@ -56,9 +56,9 @@ const LeadingOrganization = () => {
             <div className="group relative rounded-2xl overflow-hidden border border-white/10 bg-[#0A0A0E] flex-1 min-h-[250px]">
               <div className="absolute inset-0 bg-gradient-to-br from-teal-600/20 to-blue-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <img
-                src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1470&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=60&w=1400&auto=format&fit=crop"
                 alt="Innovation"
-                className="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700"
+                className="w-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
 

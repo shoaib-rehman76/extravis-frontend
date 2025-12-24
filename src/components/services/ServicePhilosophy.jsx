@@ -1,5 +1,3 @@
-import React from 'react';
-import { motion } from 'framer-motion';
 
 const philosophyItems = [
     {
@@ -46,7 +44,7 @@ const ServicePhilosophy = () => {
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-16 items-start">
 
                 {/* Left Side - Text Content */}
-                <div className="lg:col-span-2 sticky top-24">
+                <div className="lg:col-span-2 self-center">
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-2">
                         Our Service <br />
                         <span className="text-purple-400">Philosophy</span>

@@ -32,18 +32,18 @@ const AutomationAndDigitalSolution = () => {
               data-aos-duration="1500"
               data-aos-delay={index * 150}
               key={item.id}
-              className="cursor-pointer w-1/4 h-[430px] bg-white p-3 rounded hover:flagship-card shadow-xl transition-all duration-300"
+              className="cursor-pointer w-1/4 h-[430px] bg-purple-300 p-3 rounded hover:flagship-card shadow-xl transition-all duration-300"
             >
-            <img
-              src={item.image}
-              alt="automation-and-digital-solution"
-              className="rounded"
-            />
-            <h1 className="text-[1rem] font-[700] gradient-text my-2">{item.title}</h1>
-            <p className="text-black text-[.9rem]">
-            {item.description}
-            </p>
-          </div>
+              <img
+                src={item.image}
+                alt="automation-and-digital-solution"
+                className="rounded"
+              />
+              <h1 className="text-[1rem] font-[700] gradient-text my-2">{item.title}</h1>
+              <p className="text-black text-[.9rem]">
+                {item.description}
+              </p>
+            </div>
           ))}
         </div>
       </Wrapper>
