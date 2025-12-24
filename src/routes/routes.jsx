@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Home } from "../pages/home/Home";
 import { Layout } from "../components/Layout";
+import { Services } from "../pages/services/Services";
 // import { About } from "../pages/about/About";
 
 const RoutesIndex = () => {
@@ -10,6 +11,14 @@ const RoutesIndex = () => {
       element: (
         <Layout>
           <Home />
+        </Layout>
+      ),
+    },
+    {
+      path: "/services",
+      element: (
+        <Layout>
+          <Services />
         </Layout>
       ),
     },
