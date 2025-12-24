@@ -16,14 +16,12 @@ const RoutesIndex = () => {
       ),
     },
     {
-
       path: "/services",
       element: (
         <Layout>
           <Services />
         </Layout>
       ),
-
     },
     {
       path: "/products",

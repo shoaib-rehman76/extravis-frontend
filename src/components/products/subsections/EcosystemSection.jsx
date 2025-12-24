@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const EcosystemSection = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: false });
+  }, []);
+
   const benefits = [
     { id: 1, text: "Shared data intelligence across all platforms" },
     { id: 2, text: "Unified user experience and training" },
@@ -9,12 +15,21 @@ const EcosystemSection = () => {
   ];
 
   return (
-    <section className="bg-black text-white py-20 px-6 md:px-12 border-t border-white/5">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
-        {/* Left Column: Text Content */}
-        <div className="lg:w-1/2 space-y-6">
-          <h2 className="text-3xl md:text-5xl font-bold">
-            The Extravis <span className="text-purple-500">Ecosystem</span>
+    <section className="bg-black text-white py-24 px-6 md:px-12 relative overflow-hidden">
+      {/* Container: Handles the 2-Column Split */}
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start justify-between gap-16 lg:gap-24">
+        {/* =======================
+            LEFT COLUMN: Title & Text
+           ======================= */}
+        <div
+          className="w-full lg:w-5/12 space-y-8 sticky top-24"
+          data-aos="fade-right"
+        >
+          <h2 className="text-4xl md:text-5xl font-bold leading-tight">
+            The Extravis <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">
+              Ecosystem
+            </span>
           </h2>
           <p className="text-gray-400 text-lg leading-relaxed">
             Our products aren't just individual tools—they're part of an
@@ -25,32 +40,44 @@ const EcosystemSection = () => {
           </p>
         </div>
 
-        {/* Right Column: Benefits Grid */}
-        <div className="lg:w-1/2 w-full">
-          <h3 className="text-xl font-semibold mb-6 text-gray-200">
+        {/* =======================
+            RIGHT COLUMN: Header & Grid
+           ======================= */}
+        <div className="w-full lg:w-6/12">
+          {/* Header above the grid */}
+          <h3
+            className="text-lg font-medium mb-8 text-white"
+            data-aos="fade-left"
+          >
             Integration Benefits
           </h3>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {benefits.map((benefit) => (
+          {/* The Grid of Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            {benefits.map((benefit, index) => (
               <div
                 key={benefit.id}
-                className="group relative p-6 rounded-2xl bg-[#0f0f11] border border-gray-800 hover:border-purple-500/50 transition-all duration-300 overflow-hidden"
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
+                className="group relative p-8 rounded-xl bg-[#08080A] border border-white/5 hover:border-purple-500/30 transition-all duration-300 min-h-[180px] flex flex-col justify-between"
               >
-                {/* Hover Glow Effect */}
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                {/* Blue Dot (Top Right) */}
+                <div className="absolute top-4 right-4">
+                  <div className="w-1.5 h-1.5 rounded-full bg-blue-600 shadow-[0_0_8px_rgba(37,99,235,0.8)]"></div>
+                </div>
 
-                <div className="relative z-10 flex flex-col justify-between h-full min-h-[100px]">
-                  <span className="text-xs font-bold text-purple-500 mb-2">
+                {/* Card Content */}
+                <div>
+                  <span className="text-xs font-mono text-gray-500 block mb-3">
                     0{benefit.id}
                   </span>
-                  <p className="font-medium text-gray-300 group-hover:text-white transition-colors">
+                  <p className="font-medium text-gray-200 text-lg leading-snug group-hover:text-white transition-colors">
                     {benefit.text}
                   </p>
-
-                  {/* Decorative dot */}
-                  <div className="absolute top-4 right-4 w-1.5 h-1.5 rounded-full bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.8)]" />
                 </div>
+
+                {/* Subtle Hover Glow */}
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-purple-900/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-xl pointer-events-none" />
               </div>
             ))}
           </div>
