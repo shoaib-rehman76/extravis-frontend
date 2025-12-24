@@ -16,7 +16,7 @@ export const navLinks = [
       {
         id: 1,
         title: "MonetX",
-        url: "/products", // You can change this to /products/monetx later if you make separate pages
+        url: "/montex", // You can change this to /products/monetx later if you make separate pages
       },
       {
         id: 2,
