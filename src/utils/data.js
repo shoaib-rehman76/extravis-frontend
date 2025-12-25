@@ -21,7 +21,7 @@ export const navLinks = [
       {
         id: 2,
         title: "SupportX",
-        url: "/products",
+        url: "/supportx",
       },
     ],
   },

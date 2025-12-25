@@ -4,6 +4,7 @@ import Products from "../pages/products/Products";
 import { Layout } from "../components/Layout";
 import { Services } from "../pages/services/Services";
 import MontexProductPage  from "../pages/monetX/MontexProductPage";
+import SupportxProductPage from "../pages/supportX/SupportxProductPage";
 // import { About } from "../pages/about/About";
 
 const RoutesIndex = () => {
@@ -37,6 +38,14 @@ const RoutesIndex = () => {
       element: (
         <Layout>
           <MontexProductPage />
+        </Layout>
+      ),
+    },    
+    {
+      path: "/supportx",
+      element: (
+        <Layout>
+          <SupportxProductPage />
         </Layout>
       ),
     },    
