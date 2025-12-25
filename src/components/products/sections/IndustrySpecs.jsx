@@ -21,7 +21,10 @@ const IndustrySpecs = ({ title, highlight, tabs }) => {
       />
 
       <Wrapper>
-        <div className="max-w-7xl flex flex-wrap justify-between mb-12 gap-2 mx-auto mt-12">
+        <div 
+          data-aos="fade-down"
+          className="max-w-7xl flex flex-wrap justify-between mb-12 gap-2 mx-auto mt-12"
+        >
           {tabs.map((tab) => (
             <button
               key={tab.id}
@@ -38,7 +41,11 @@ const IndustrySpecs = ({ title, highlight, tabs }) => {
           ))}
         </div>
 
-        <div className="max-w-7xl mx-auto">
+        <div 
+          data-aos="fade-up" 
+          data-aos-delay="200"
+          className="max-w-7xl mx-auto"
+        >
           <div className="p-8 rounded-2xl bg-[#0a0a1a] border border-purple-500/20">
             <div className="flex items-center gap-3 mb-4">
               <span className="text-3xl">{activeContent.icon}</span>

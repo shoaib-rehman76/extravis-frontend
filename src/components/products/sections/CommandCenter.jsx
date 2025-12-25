@@ -32,7 +32,12 @@ const CommandCenter = ({ title, steps }) => {
       <Wrapper>
         <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
           {steps.map((step, index) => (
-            <div key={index} className="p-8 rounded-2xl bg-[#0d0d1f] border border-purple-500/30 flex gap-6">
+            <div 
+              key={index} 
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+              className="p-8 rounded-2xl bg-[#0d0d1f] border border-purple-500/30 flex gap-6"
+            >
               <div className="flex-shrink-0">
                 <div className={`w-16 h-16 rounded-2xl flex items-center justify-center border ${colors[step.color]}`}>
                   <span className="text-3xl">

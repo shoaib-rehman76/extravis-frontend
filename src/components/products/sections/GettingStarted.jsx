@@ -10,7 +10,12 @@ const GettingStarted = ({ title, description, steps }) => {
       <Wrapper>
         <div className="grid md:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {steps.map((step, index) => (
-            <div key={index} className="p-8 rounded-2xl bg-[#0a0a1a] border border-purple-500/20">
+            <div 
+              key={index} 
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+              className="p-8 rounded-2xl bg-[#0a0a1a] border border-purple-500/20"
+            >
               <div className="inline-block px-3 py-1 rounded bg-blue-500/20 border border-blue-500/30 text-blue-400 text-sm font-medium mb-6">
                 Step {index + 1}
               </div>

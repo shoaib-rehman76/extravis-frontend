@@ -24,7 +24,12 @@ const ModernNetworks = ({ title, subtitle, description, cards }) => {
         <Wrapper>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {cards.map((card, index) => (
-              <div key={index} className="group p-6 rounded-2xl bg-[#19192e5c] border border-[#6260b430] backdrop-blur-sm hover:border-[#6260b430] transition-all hover:scale-105">
+              <div 
+                key={index} 
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
+                className="group p-6 rounded-2xl bg-[#19192e5c] border border-[#6260b430] backdrop-blur-sm hover:border-[#6260b430] transition-all hover:scale-105"
+              >
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-lg bg-red-500/20 flex items-center justify-center flex-shrink-0 group-hover:bg-red-500/30 transition-colors">
                     <span className="text-2xl text-red-700">

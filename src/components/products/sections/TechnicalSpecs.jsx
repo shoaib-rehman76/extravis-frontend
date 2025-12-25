@@ -29,7 +29,10 @@ const TechnicalSpecs = ({ title, card1, card2, card3 }) => {
       <Wrapper>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {/* Card 1: AI-Driven Reporting & Analytics */}
-          <div className="p-8 flex flex-col rounded-2xl bg-[#0d0d1f] border border-purple-500/30">
+          <div 
+            data-aos="fade-up"
+            className="p-8 flex flex-col rounded-2xl bg-[#0d0d1f] border border-purple-500/30"
+          >
             <div className="flex items-center gap-3 mb-8">
               <span className="text-2xl text-blue-400"><PiBrainThin /></span>
               <h3 className="text-lg font-bold text-white">{card1.title}</h3>
@@ -54,7 +57,11 @@ const TechnicalSpecs = ({ title, card1, card2, card3 }) => {
           </div>
 
           {/* Card 2: Scalability Matrix */}
-          <div className="p-8 rounded-2xl bg-[#0d0d1f] border border-purple-500/30 flex flex-col">
+          <div 
+            data-aos="fade-up"
+            data-aos-delay="100"
+            className="p-8 rounded-2xl bg-[#0d0d1f] border border-purple-500/30 flex flex-col"
+          >
             <div className="flex items-center gap-3 mb-8">
               <span className="text-2xl text-green-400"><FaChartBar /></span>
               <h3 className="text-lg font-bold text-white">{card2.title}</h3>
@@ -95,7 +102,11 @@ const TechnicalSpecs = ({ title, card1, card2, card3 }) => {
           </div>
 
           {/* Card 3: Security Framework */}
-          <div className="p-8 flex flex-col rounded-2xl bg-[#0d0d1f] border border-purple-500/30">
+          <div 
+            data-aos="fade-up"
+            data-aos-delay="200"
+            className="p-8 flex flex-col rounded-2xl bg-[#0d0d1f] border border-purple-500/30"
+          >
             <div className="flex items-center gap-3 mb-8">
               <span className="text-2xl text-green-400"><MdOutlineSecurity /></span>
               <h3 className="text-lg font-bold text-white">{card3.title}</h3>

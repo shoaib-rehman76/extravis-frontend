@@ -26,26 +26,31 @@ const ProductHero = ({
         {/* Left Content */}
         <div className="space-y-6">
           {subtitle && (
-            <div className="inline-block px-4 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-purple-400 text-sm font-medium">
+            <div 
+              data-aos="fade-up"
+              className="inline-block px-4 py-1 bg-purple-600/20 border border-purple-500/30 rounded-full text-purple-400 text-sm font-medium"
+            >
               {subtitle}
             </div>
           )}
-          <h1 className="text-[2.2rem] lg:text-[2.5rem] font-bold leading-tight">
+          <h1 data-aos="fade-up" data-aos-delay="100" className="text-[2.1rem] font-bold leading-tight">
             {title}
           </h1>
-          <p className="text-gray-300 text-[1rem] max-w-xl leading-relaxed">
+          <p data-aos="fade-up" data-aos-delay="200" className="text-gray-300 text-[1rem] max-w-xl leading-relaxed">
             {description}
           </p>
-          <button 
-            onClick={onButtonClick}
-            className="px-8 py-3 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 text-white rounded-lg font-medium transition-all transform hover:scale-105 shadow-lg shadow-purple-500/50"
-          >
-            {buttonText} →
-          </button>
+          <div data-aos="fade-up" data-aos-delay="300">
+            <button 
+              onClick={onButtonClick}
+              className="px-8 py-3 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 text-white rounded-lg font-medium transition-all transform hover:scale-105 shadow-lg shadow-purple-500/50"
+            >
+              {buttonText} →
+            </button>
+          </div>
         </div>
         
         {/* Right Dashboard/Product Image */}
-        <div className="relative lg:block hidden">
+        <div className="relative lg:block hidden" data-aos="fade-left" data-aos-duration="1000">
           <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-blue-600/20 blur-3xl opacity-50" />
           <img 
             src={heroImage} 
@@ -57,6 +62,8 @@ const ProductHero = ({
           {featureTags.map((tag, index) => (
             <div 
               key={index}
+              data-aos="zoom-in"
+              data-aos-delay={400 + index * 100}
               className={`absolute ${tag.position} bg-gray-900/90 backdrop-blur-sm border border-purple-500/30 rounded-lg px-4 py-2 shadow-xl`}
             >
               <div className="flex items-center gap-2">

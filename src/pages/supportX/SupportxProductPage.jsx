@@ -13,6 +13,9 @@ import CTASection from '../../components/products/common/CTASection';
 import Footer from '../../components/Footer';
 import { supportxContent } from './supportxContent.jsx';
 import Pricing from '../../components/products/sections/Pricing.jsx';
+import ROIImpact from '../../components/products/sections/ROIImpact';
+import UserExperience from '../../components/products/sections/UserExperience';
+import GettingStarted from '../../components/products/sections/GettingStarted';
 
 const SupportxProductPage = () => {
   return (
@@ -28,6 +31,10 @@ const SupportxProductPage = () => {
       <IndustrySpecs {...supportxContent.industrySpecs} />
 
       {/* <TechnicalSpecs {...supportxContent.technicalSpecs} /> */}
+      
+      <ROIImpact {...supportxContent.roiImpact} />
+
+      <UserExperience {...supportxContent.userExperience} />
 
       <Pricing {...supportxContent.pricing} />
 
@@ -38,6 +45,8 @@ const SupportxProductPage = () => {
       <SecurityCompliance {...supportxContent.securityCompliance} />
 
       <IntegrationEcosystem {...supportxContent.integrationEcosystem} />
+
+      <GettingStarted {...supportxContent.gettingStarted} />
 
       <CTASection {...supportxContent.cta} />
 

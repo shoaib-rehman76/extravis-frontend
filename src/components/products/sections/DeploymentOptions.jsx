@@ -21,7 +21,12 @@ const DeploymentOptions = ({ title, description, options }) => {
       <Wrapper>
         <div className="grid md:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {options.map((opt, idx) => (
-            <div key={idx} className="p-8 rounded-2xl bg-[#0d0d1f] border border-blue-500/20 flex flex-col">
+            <div 
+              key={idx} 
+              data-aos="fade-up"
+              data-aos-delay={idx * 100}
+              className="p-8 rounded-2xl bg-[#0d0d1f] border border-blue-500/20 flex flex-col"
+            >
               <div className="flex items-center gap-3 mb-6">
                 <span className={`text-2xl ${opt.id === "saas" ? "text-blue-400" :  opt.id === "cloud" ? "text-green-400" : "text-yellow-400"  }`}>
                   {iconMap[opt.id]}

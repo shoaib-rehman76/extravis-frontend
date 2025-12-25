@@ -42,13 +42,13 @@ const SectionHeader = ({ title, description, subtitle }) => {
                 {subtitle}
               </p>
             )}
-            <h2 className="text-[2.2rem] text-center lg:text-[2.8rem] font-[700] leading-tight transition-all duration-300 text-white">
+            <h2 className="text-[1.9rem] text-center font-[500] leading-tight transition-all duration-300 text-white">
               {renderTitle()}
             </h2>
           </div>
           {description && (
             <div className="w-full flex justify-center align-center">
-              <p className="text-gray-400 text-center text-[1.1rem] leading-relaxed max-w-3xl">
+              <p className="text-gray-400 text-center text-[1rem] leading-relaxed max-w-3xl">
                 {description}
               </p>
             </div>

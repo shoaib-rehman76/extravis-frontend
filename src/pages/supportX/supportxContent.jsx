@@ -13,44 +13,45 @@ export const supportxContent = {
     subtitle: "Enterprise Support",
     title: (
       <>
-        <span className="text-white/90">Intelligent <br /> Support</span>
+        <span className="text-white/90">Intelligent IT Service</span>
         <br />
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-300 to-purple-400">
-          Optimization &
+         Management &
         </span>
         <br />
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-300 to-purple-400">
-          Efficiency
+         Helpdesk Automation
         </span>
       </>
     ),
-    description: "Empower your support teams with AI-driven insights, automated ticketing, and proactive resolution tracking across your global support infrastructure.",
-    buttonText: "Explore SupportX",
-    backgroundImage: "../assets/montex/hero-bg.png", // Reuse bg for consistency
-    heroImage: "../assets/montex/hero-img.png", // Reuse or replace
+    description: "Reduce ticket chaos, improve SLA compliance and deliver exceptional support with SupportX, Extravis’s AI‑powered service management platform.",
+    buttonText: "Start a free trial",
+    secondaryButtonText: "Talk to our sales team",
+    backgroundImage: "../assets/montex/hero-bg.png",
+    heroImage: "../assets/supportx/hero-img-supportx.png",
     featureTags: [
       { position: "bottom-8 left-0", icon: "🛠️", label: "Auto-Resolution" },
       { position: "bottom-8 right-0", icon: "📈", label: "Predictive Ticketing" }
     ]
   },
   modernNetworks: {
-    title: "Support Operations Are More Critical Than Ever",
-    description: "Modern customer expectations demand instant resolution. Static help desks and manual ticket routing can't keep up with the volume and complexity of today's enterprise demands. You need a platform that thinks as fast as your customers.",
+    title: "Challenges We Solve",
+    description: "Traditional support models lead to ticket chaos, missed SLAs, wasted resources, user frustration and hidden knowledge gaps. SupportX turns reactive firefighting into proactive service excellence.",
     cards: [
-      { icon: "LuUsersRound", title: "Response Lag", description: "Delayed ticket handling causing customer friction." },
-      { icon: "FiAlertTriangle", title: "Siloed Knowledge", description: "Expertise locked in individual heads rather than the platform." },
-      { icon: "FaNetworkWired", title: "Workflow Chaos", description: "Inconsistent processes across different support tiers." },
-      { icon: "HiOutlineBolt", title: "Manual Overload", description: "Agents spending 40% of time on repetitive data entry." },
-      { icon: "IoMdCloudOutline", title: "Opaque Metrics", description: "Difficulty tracking the true cost of resolution." }
+      { icon: "IoMdCloudOutline", title: "Ticket Chaos", description: "Overwhelming volume of unorganized requests." },
+      { icon: "FiAlertTriangle", title: "Missed SLAs", description: "Deadlines breached due to manual routing." },
+      { icon: "HiOutlineBolt", title: "Wasted Resources", description: "skilled agents solving repetitive issues." },
+      { icon: "LuUsersRound", title: "User Frustration", description: "Slow response times impacting satisfaction." },
+      { icon: "FaNetworkWired", title: "Knowledge Gaps", description: "Critical solutions locked in individual silos." }
     ]
   },
   commandCenter: {
-    title: { prefix: "Your Support", highlight: "Intelligence Command", suffix: "Center" },
+    title: { prefix: "Core", highlight: "Features", suffix: "" },
     steps: [
-      { color: "blue", icon: "TbHierarchy3", title: "Deep Integration", description: "SupportX connects with all your customer touchpoints, CRM, and internal telemetry." },
-      { color: "purple", icon: "PiBrainThin", title: "Smart Routing", description: "AI analyzes intent and sentiment to route cases to the perfect agent automatically." },
-      { color: "yellow", icon: "HiOutlineBolt", title: "Proactive Fixes", description: "System identifies recurring issues and triggers automated fixes before tickets are even opened." },
-      { color: "green", icon: "RxTarget", title: "Feedback Loop", description: "Continuously refines help articles and bot logic based on successful resolutions." }
+      { color: "blue", icon: "TbHierarchy3", title: "Smart Intake & Routing", description: "AI analyses incoming requests across all channels to determine urgency and assign to the right expert, preventing bottlenecks." },
+      { color: "purple", icon: "PiBrainThin", title: "Automated Tracking", description: "Monitors SLA compliance, notifies teams of deadlines, and auto‑escalates tasks so nothing falls through the cracks." },
+      { color: "yellow", icon: "HiOutlineBolt", title: "AI‑Powered Knowledge", description: "Builds a dynamic knowledge base that surfaces relevant answers and enables self‑service, keeping solutions current." },
+      { color: "green", icon: "RxTarget", title: "Advanced Analytics", description: "Trend analysis, predictive planning, and resource optimisation allow you to continually improve service delivery." }
     ]
   },
   keyFeatures: {
@@ -58,36 +59,36 @@ export const supportxContent = {
     row1: {
       card1: {
         icon: "FaRegChartBar",
-        title: "Sentiment & Intent Analysis",
-        description: "Understand the urgency and mood of every customer interaction in real-time.",
-        features: ["Multi-language NLP", "Urgency scores", "Historical context", "Agent guidance"]
+        title: "Seamless Multi‑Region Support",
+        description: "Follow‑the‑sun support across time zones and languages with cultural adaptation and regulatory compliance.",
+        features: ["Time zone sync", "Language translation", "Cultural adaptation", "Regulatory compliance"]
       },
-      image: "../assets/montex/key-features.png", // Replace with support specific if available
+      image: "../assets/supportx/key-features-supportx.png",
       card2: {
         icon: "CiFileOn",
-        title: "Automated Knowledge Gen",
-        description: "Automatically convert successful resolutions into searchable help center articles.",
-        features: ["Auto-drafting", "Version control", "SEO optimization", "Review workflows"]
+        title: "Integration Ecosystem",
+        description: "Pre‑built integrations with ITSM platforms, communication tools, and monitoring systems. API support for custom needs.",
+        features: ["ITSM integrations", "Communication tools", "Monitoring systems", "API & Webhooks"]
       }
     },
     row2: [
       {
         icon: "TbHierarchy",
-        title: "Unified Agent Desktop",
-        description: "One interface for voice, chat, email, and social media with full customer history.",
-        features: ["Omnichannel sync", "Integrated KB", "Real-time collab", "Presence management"]
+        title: "User Experience & Interface",
+        description: "Unified dashboard for teams, collaborative tools, and mobile access. End users allow multi‑channel ticket creation and self‑service.",
+        features: ["Unified dashboard", "Collaboration tools", "Mobile access", "Self-service portals"]
       },
       {
         icon: "PiBrainThin",
-        title: "Predictive Load Balancing",
-        description: "Forecast support volumes and suggest staffing adjustments before surges occur.",
-        features: ["Seasonal modeling", "Shift optimization", "Burndown charts", "Capacity alerts"]
+        title: "Security & Compliance",
+        description: "AES‑256 encryption, role‑based access, audit logging, and compliance with SOC 2 Type II, ISO 27001 and GDPR.",
+        features: ["AES-256 encryption", "RBAC", "Audit logging", "Compliance ready"]
       },
       {
         icon: "RxTarget",
-        title: "Custom SLA Orchestrator",
-        description: "Define and enforce complex SLAs for different customer tiers and product lines.",
-        features: ["Tiered alerts", "Auto-escalation", "Executive reporting", "Breach forecasting"]
+        title: "ROI & Business Impact",
+        description: "Reduce response times, decrease ticket backlogs, improve resolution rates and enhance user satisfaction.",
+        features: ["Faster response", "Reduced backlog", "Higher resolution", "Enhanced satisfaction"]
       }
     ]
   },
@@ -121,19 +122,19 @@ export const supportxContent = {
           'Post-purchase feedback automation'
         ]
       },
-      { 
-        id: 'fintech', 
-        label: 'Fintech', 
-        icon: <FaUserDoctor />,
-        title: 'Financial Tech',
-        description: 'Compliance-first support for regulated financial services and digital banking.',
-        features: [
-          'Verified identity support channels',
-          'Secure document exchange and review',
-          'Regulatory reporting export tools',
-          'Fraud alert escalation workflows'
-        ]
-      },
+      // { 
+      //   id: 'fintech', 
+      //   label: 'Fintech', 
+      //   icon: <FaUserDoctor />,
+      //   title: 'Financial Tech',
+      //   description: 'Compliance-first support for regulated financial services and digital banking.',
+      //   features: [
+      //     'Verified identity support channels',
+      //     'Secure document exchange and review',
+      //     'Regulatory reporting export tools',
+      //     'Fraud alert escalation workflows'
+      //   ]
+      // },
       { 
         id: 'managed', 
         label: 'Managed Services', 
@@ -228,7 +229,7 @@ export const supportxContent = {
   },
   deploymentOptions: {
     title: "Deployment Options",
-    description: "Cloud-first architecture designed for modern environments while supporting traditional deployment models",
+    description: "SaaS, private cloud or on‑premises, each with appropriate infrastructure control and support models.",
     options: [
       {
         id: "saas",
@@ -304,6 +305,56 @@ export const supportxContent = {
       }
     ]
   },
+  roiImpact: {
+    title: "ROI & Business Impact",
+    description: "SupportX helps organisations reduce response times, decrease ticket backlogs, improve resolution rates and enhance user satisfaction.",
+    cards: [
+      { icon: "clock", title: "Response Reduction", color: "green" },
+      { icon: "check", title: "Resolution Rates", color: "blue" },
+      { icon: "down", title: "Ticket Backlogs", color: "purple" },
+      { icon: "thumbs", title: "User Satisfaction", color: "yellow" },
+      { icon: "up", title: "Efficiency Boost", color: "cyan" }
+    ]
+  },
+  userExperience: {
+    title: "User Experience &",
+    subtitle: "Interface",
+    columns: [
+      {
+        icon: "user",
+        title: "For End Users",
+        items: [
+            { title: "Multi-channel Ticket Creation", description: "Email, portal, mobile app, phone, and chat support." },
+            { title: "Self-Service Portals", description: "Searchable knowledge base with common solutions." },
+            { title: "Real-Time Updates", description: "Automatic notifications about ticket progress." },
+            { title: "Mobile Access", description: "Full functionality available on smartphones and tablets." },
+            { title: "Feedback Integration", description: "Easy satisfaction rating and improvement suggestions." }
+        ]
+      },
+      {
+        icon: "headphones",
+        title: "For Support Teams",
+        items: [
+            { title: "Unified Dashboard", description: "All assigned tickets with priority and SLA information." },
+            { title: "Collaborative Tools", description: "Built-in chat, screen sharing, and knowledge sharing." },
+            { title: "Mobile App", description: "Handle urgent tickets from anywhere." },
+            { title: "Performance Metrics", description: "Individual and team performance tracking." },
+            { title: "Continuous Learning", description: "Suggested training based on ticket patterns." }
+        ]
+      },
+      {
+        icon: "settings",
+        title: "For Managers",
+        items: [
+           { title: "Executive Dashboards", description: "High-level KPIs, trend analysis, and predictive planning." },
+           { title: "Resource Planning", description: "Workload distribution and capacity planning." },
+           { title: "Quality Monitoring", description: "Ticket quality auditing and coaching opportunities." },
+           { title: "Budget Planning", description: "Cost per ticket and ROI analysis." },
+           { title: "Compliance Reporting", description: "Automated compliance and audit reporting." }
+        ]
+      }
+    ]
+  },
   pricing: {
     title: "Tailored Support Plans",
     description: "Scale your customer success operations with pricing that grows as you do.",
@@ -347,8 +398,9 @@ export const supportxContent = {
     ]
   },
   cta: {
-    title: "Elevate Your Customer Experience",
-    description: "Join the next generation of support leaders using SupportX to drive efficiency.",
-    buttonText: "Request Support Audit"
+    title: "Ready to Transform Your Projects?",
+    description: "Join leading organizations using SupportX to deliver projects on time and within budget",
+    buttonText: "Start a free trial",
+    secondaryButtonText: "Talk to our sales team"
   }
 };

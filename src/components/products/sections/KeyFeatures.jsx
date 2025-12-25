@@ -25,7 +25,10 @@ const KeyFeatures = ({ title, row1, row2 }) => {
           {/* Row 1: Custom Asymmetric Layout */}
           <div className="flex flex-wrap gap-6">
             {/* Card 1 */}
-            <div className="flex-[1] min-w-[280px] lg:w-[calc(25%-18px)] group p-6 rounded-2xl bg-[#0a0a1a] border border-purple-500/20 backdrop-blur-sm hover:border-purple-500/40 transition-all">
+            <div 
+              data-aos="fade-right"
+              className="flex-[1] min-w-[280px] lg:w-[calc(25%-18px)] group p-6 rounded-2xl bg-[#0a0a1a] border border-purple-500/20 backdrop-blur-sm hover:border-purple-500/40 transition-all"
+            >
               <div className="w-12 h-12 rounded-lg bg-blue-500/20 flex items-center justify-center mb-4">
                 <span className="text-2xl text-cyan-400">
                   {typeof row1.card1.icon === 'string' ? iconMap[row1.card1.icon] : row1.card1.icon}
@@ -43,12 +46,20 @@ const KeyFeatures = ({ title, row1, row2 }) => {
             </div>
 
             {/* Center Image */}
-            <div className="flex-[2] min-w-[280px] lg:w-[calc(50%-12px)] group rounded-2xl bg-[#0a0a1a] border border-purple-500/20 backdrop-blur-sm overflow-hidden hover:border-purple-500/40 transition-all">
+            <div 
+              data-aos="zoom-in"
+              data-aos-delay="200"
+              className="flex-[2] min-w-[280px] lg:w-[calc(50%-12px)] group rounded-2xl bg-[#0a0a1a] border border-purple-500/20 backdrop-blur-sm overflow-hidden hover:border-purple-500/40 transition-all"
+            >
               <img src={row1.image} alt="Feature Preview" className="w-full h-full object-cover" />
             </div>
 
             {/* Card 2 */}
-            <div className="flex-[1] min-w-[280px] lg:w-[calc(25%-18px)] group p-6 rounded-2xl bg-[#0a0a1a] border border-purple-500/20 backdrop-blur-sm hover:border-purple-500/40 transition-all">
+            <div 
+              data-aos="fade-left"
+              data-aos-delay="300"
+              className="flex-[1] min-w-[280px] lg:w-[calc(25%-18px)] group p-6 rounded-2xl bg-[#0a0a1a] border border-purple-500/20 backdrop-blur-sm hover:border-purple-500/40 transition-all"
+            >
               <div className="w-12 h-12 rounded-lg bg-blue-500/20 flex items-center justify-center mb-4">
                 <span className="text-2xl text-cyan-400">
                   {typeof row1.card2.icon === 'string' ? iconMap[row1.card2.icon] : row1.card2.icon}
@@ -69,7 +80,12 @@ const KeyFeatures = ({ title, row1, row2 }) => {
           {/* Row 2: Grid Layout */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {row2.map((card, index) => (
-              <div key={index} className="group p-6 rounded-2xl bg-[#0a0a1a] border border-purple-500/20 backdrop-blur-sm hover:border-purple-500/40 transition-all">
+              <div 
+                key={index} 
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
+                className="group p-6 rounded-2xl bg-[#0a0a1a] border border-purple-500/20 backdrop-blur-sm hover:border-purple-500/40 transition-all"
+              >
                 <div className="w-12 h-12 rounded-lg bg-blue-500/20 flex items-center justify-center mb-4">
                   <span className="text-2xl text-cyan-400">
                     {typeof card.icon === 'string' ? iconMap[card.icon] : card.icon}

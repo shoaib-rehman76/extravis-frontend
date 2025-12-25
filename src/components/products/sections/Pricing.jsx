@@ -10,7 +10,12 @@ const Pricing = ({ title, subtitle, description, cards }) => {
       <Wrapper>
         <div className="grid md:grid-cols-3 gap-6 max-w-7xl mx-auto mt-12">
           {cards.map((card, index) => (
-            <div key={index} className="p-8 rounded-2xl bg-[#0a0a1a] border border-purple-500/20 flex flex-col">
+            <div 
+              key={index} 
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+              className="p-8 rounded-2xl bg-[#0a0a1a] border border-purple-500/20 flex flex-col"
+            >
               <h3 className="text-2xl font-bold text-purple-400 mb-4">{card.title}</h3>
               <ul className="space-y-3 mb-8 flex-grow">
                 {card.features.map((f, i) => (

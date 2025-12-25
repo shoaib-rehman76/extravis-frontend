@@ -19,7 +19,12 @@ const IntegrationEcosystem = ({ title, description, categories }) => {
       <Wrapper>
         <div className="grid md:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {categories.map((cat, idx) => (
-            <div key={idx} className="p-8 rounded-3xl bg-[#0d0d1f] border border-blue-500/20 flex flex-col">
+            <div 
+              key={idx} 
+              data-aos="fade-up"
+              data-aos-delay={idx * 100}
+              className="p-8 rounded-3xl bg-[#0d0d1f] border border-blue-500/20 flex flex-col"
+            >
               <div className="w-12 h-12 rounded-xl bg-blue-500 flex items-center justify-center text-white text-2xl mb-8 shadow-[0_0_20px_rgba(59,130,246,0.5)]">
                 {iconMap[cat.id]}
               </div>
