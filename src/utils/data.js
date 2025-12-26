@@ -132,44 +132,44 @@ export const ourFlagShipProducts = [
       },
     ],
   },
-  {
-    id: 3,
-    title: "Greenx",
-    sub_title: "Real-Time Energy Usage Analytics",
-    sub_description:
-      "Delivers granular, real-time visibility into power consumption across your data center, enabling precise optimization. With smart PDU, server, and environmental sensor integration, it supports efficiency, sustainability, and cost control efforts.",
-    description:
-      "Meet your sustainability goals while reducing operational costs. GreenX provides real-time energy monitoring, carbon footprint tracking, and intelligent optimization for more environmentally responsible IT operations.",
-    image: "../../assets/home/products/greenx.svg",
-    button: "Explore Greenx",
-    features: [
-      {
-        title: "Energy & Carbon Dashboard",
-        description:
-          "Real-time PUE, CUE, and emissions insights down to rack-level granularity.",
-      },
-      {
-        title: "Smart Workload Placement",
-        description:
-          "AI recommendations shift workloads to the cleanest, most cost-efficient regions.",
-      },
-      {
-        title: "Cooling Optimization",
-        description:
-          "Digital twins and IoT sensors maintain optimal thermal envelopes automatically.",
-      },
-      {
-        title: "Compliance & Reporting",
-        description:
-          "Generate audit-ready ESG disclosures aligned to GRI, SEC, and CSRD frameworks.",
-      },
-      {
-        title: "Sustainability Forecasting",
-        description:
-          "Model initiatives and investments to hit medium and long-term reduction targets.",
-      },
-    ],
-  },
+  // {
+  //   id: 3,
+  //   title: "Greenx",
+  //   sub_title: "Real-Time Energy Usage Analytics",
+  //   sub_description:
+  //     "Delivers granular, real-time visibility into power consumption across your data center, enabling precise optimization. With smart PDU, server, and environmental sensor integration, it supports efficiency, sustainability, and cost control efforts.",
+  //   description:
+  //     "Meet your sustainability goals while reducing operational costs. GreenX provides real-time energy monitoring, carbon footprint tracking, and intelligent optimization for more environmentally responsible IT operations.",
+  //   image: "../../assets/home/products/greenx.svg",
+  //   button: "Explore Greenx",
+  //   features: [
+  //     {
+  //       title: "Energy & Carbon Dashboard",
+  //       description:
+  //         "Real-time PUE, CUE, and emissions insights down to rack-level granularity.",
+  //     },
+  //     {
+  //       title: "Smart Workload Placement",
+  //       description:
+  //         "AI recommendations shift workloads to the cleanest, most cost-efficient regions.",
+  //     },
+  //     {
+  //       title: "Cooling Optimization",
+  //       description:
+  //         "Digital twins and IoT sensors maintain optimal thermal envelopes automatically.",
+  //     },
+  //     {
+  //       title: "Compliance & Reporting",
+  //       description:
+  //         "Generate audit-ready ESG disclosures aligned to GRI, SEC, and CSRD frameworks.",
+  //     },
+  //     {
+  //       title: "Sustainability Forecasting",
+  //       description:
+  //         "Model initiatives and investments to hit medium and long-term reduction targets.",
+  //     },
+  //   ],
+  // },
 ];
 
 export const automationAndDigitalSolution = [
