@@ -13,15 +13,6 @@ export default function Navbar() {
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
 
   return (
-<<<<<<< Updated upstream
-    <div className="py-4 flex justify-between items-center relative z-50">
-      <div>
-        <img
-          src="../assets/logo.svg"
-          alt="logo"
-          className="w-[140px] h-auto"
-        />
-=======
     <div className="my-6 px-4 md:px-0 flex justify-between items-center relative z-50">
       {/* --- LOGO --- */}
       <div>
@@ -32,7 +23,6 @@ export default function Navbar() {
             className="w-[120px] md:w-[140px] h-auto"
           />
         </Link>
->>>>>>> Stashed changes
       </div>
 
       {/* --- DESKTOP NAV --- */}
