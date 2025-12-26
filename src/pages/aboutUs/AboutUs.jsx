@@ -5,6 +5,10 @@ import WhatDrivesUs from "../../components/aboutUs/WhatDrivesUs";
 import MakesUsDifferent from "../../components/aboutUs/MakesUsDifferent";
 import GlobalPresence from "../../components/aboutUs/GlobalPresence";
 import LeadersWorldwide from "../../components/aboutUs/LeadersWorldwide";
+import CustomersSection from "../../components/home/CustomersSection";
+import AreaOfExpertise from "../../components/aboutUs/AreaOfExpertise";
+import FutureInnovation from "../../components/aboutUs/FutureInnovation";
+import ContactLeadership from "../../components/aboutUs/ContactLeadership";
 
 const AboutUs = () => {
     return (
@@ -17,6 +21,10 @@ const AboutUs = () => {
                 <MakesUsDifferent />
                 <GlobalPresence />
                 <LeadersWorldwide />
+                <CustomersSection />
+                <AreaOfExpertise />
+                <FutureInnovation />
+                <ContactLeadership />
                 {/* <CloudSecurity />
                 <NetworkAutomation />
                 <ServiceOfferings />

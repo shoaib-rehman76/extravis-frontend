@@ -1,27 +1,23 @@
-import PlusIcon from './Icons/PlusIcon';
-import MinusIcon from './Icons/MinusIcon';
-import BulbIcon from './Icons/BulbIcon';
-import HeartIcon from './Icons/HeartIcon';
-import TrustIcon from './Icons/TrustIcon';
-import GlobeIcon from './Icons/GlobeIcon';
-import LeafIcon from './Icons/LeafIcon';
-import HandshakeIcon from './Icons/HandshakeIcon';
-import CommunicationIcon from './Icons/CommunicationIcon';
-import BriefcaseIcon from './Icons/BriefcaseIcon';
-import EnergyIcon from './Icons/EnergyIcon';
-import CalculatorIcon from './Icons/CalculatorIcon';
-
-export {
-  PlusIcon,
-  MinusIcon,
-  BulbIcon,
-  HeartIcon,
-  TrustIcon,
-  GlobeIcon,
-  LeafIcon,
-  HandshakeIcon,
-  CommunicationIcon,
-  BriefcaseIcon,
-  EnergyIcon,
-  CalculatorIcon
-};
+export { default as PlusIcon } from './Icons/PlusIcon';
+export { default as MinusIcon } from './Icons/MinusIcon';
+export { default as BulbIcon } from './Icons/BulbIcon';
+export { default as HeartIcon } from './Icons/HeartIcon';
+export { default as TrustIcon } from './Icons/TrustIcon';
+export { default as GlobeIcon } from './Icons/GlobeIcon';
+export { default as LeafIcon } from './Icons/LeafIcon';
+export { default as HandshakeIcon } from './Icons/HandshakeIcon';
+export { default as CommunicationIcon } from './Icons/CommunicationIcon';
+export { default as BriefcaseIcon } from './Icons/BriefcaseIcon';
+export { default as EnergyIcon } from './Icons/EnergyIcon';
+export { default as CalculatorIcon } from './Icons/CalculatorIcon';
+export { default as CloudIcon } from './Icons/CloudIcon';
+export { default as BrainIcon } from './Icons/BrainIcon';
+export { default as BuildingIcon } from './Icons/BuildingIcon';
+export { default as RocketIcon } from './Icons/RocketIcon';
+export { default as EyeIcon } from './Icons/EyeIcon';
+export { default as ExpansionIcon } from './Icons/ExpansionIcon';
+export { default as AIIcon } from './Icons/AIIcon';
+export { default as GrowthIcon } from './Icons/GrowthIcon';
+export { default as PeopleIcon } from './Icons/PeopleIcon';
+export { default as MailIcon } from './Icons/MailIcon';
+export { default as PhoneIcon } from './Icons/PhoneIcon';
