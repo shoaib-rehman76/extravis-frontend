@@ -25,10 +25,10 @@ export const monetxContent = {
     secondaryButtonText: "Schedule a Custom Demo",
     backgroundImage: "../assets/montex/hero-bg.png",
     heroImage: "../assets/montex/hero-img.png",
-    featureTags: [
-      { position: "bottom-8 left-0", icon: "📊", label: "Automated Reports" },
-      { position: "bottom-8 right-0", icon: "📈", label: "Interactive Dashboards" }
-    ]
+    // featureTags: [
+    //   { position: "bottom-8 left-0", icon: "📊", label: "Automated Reports" },
+    //   { position: "bottom-8 right-0", icon: "📈", label: "Interactive Dashboards" }
+    // ]
   },
   modernNetworks: {
     title: "Challenges We Solve",

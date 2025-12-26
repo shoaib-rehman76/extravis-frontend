@@ -1,12 +1,13 @@
 import React from 'react';
 import { VscTypeHierarchySub } from 'react-icons/vsc';
-import { FaFile, FaUserDoctor, FaChartBar, FaNetworkWired } from 'react-icons/fa6';
+import { FaFile, FaUserDoctor, FaChartBar, FaNetworkWired, FaUsers, FaHeadphones } from 'react-icons/fa6';
 import { TbAlignBoxCenterStretch, TbHierarchy } from 'react-icons/tb';
 import { PiBrainThin, PiHandTapLight } from 'react-icons/pi';
 import { LuUsersRound } from 'react-icons/lu';
 import { GoServer } from 'react-icons/go';
 import { CiGlobe } from 'react-icons/ci';
 import { FiKey, FiShield, FiFileText, FiAward } from 'react-icons/fi';
+import { FaCog } from 'react-icons/fa';
 
 export const supportxContent = {
   hero: {
@@ -29,10 +30,10 @@ export const supportxContent = {
     secondaryButtonText: "Talk to our sales team",
     backgroundImage: "../assets/montex/hero-bg.png",
     heroImage: "../assets/supportx/hero-img-supportx.png",
-    featureTags: [
-      { position: "bottom-8 left-0", icon: "🛠️", label: "Auto-Resolution" },
-      { position: "bottom-8 right-0", icon: "📈", label: "Predictive Ticketing" }
-    ]
+    // featureTags: [
+    //   { position: "bottom-8 left-0", icon: "🛠️", label: "Auto-Resolution" },
+    //   { position: "bottom-8 right-0", icon: "📈", label: "Predictive Ticketing" }
+    // ]
   },
   modernNetworks: {
     title: "Challenges We Solve",
@@ -317,11 +318,11 @@ export const supportxContent = {
     ]
   },
   userExperience: {
-    title: "User Experience &",
+    title: "User Experience",
     subtitle: "Interface",
     columns: [
       {
-        icon: "user",
+        icon: <FaUsers />,
         title: "For End Users",
         items: [
             { title: "Multi-channel Ticket Creation", description: "Email, portal, mobile app, phone, and chat support." },
@@ -332,7 +333,7 @@ export const supportxContent = {
         ]
       },
       {
-        icon: "headphones",
+        icon: <FaHeadphones />,
         title: "For Support Teams",
         items: [
             { title: "Unified Dashboard", description: "All assigned tickets with priority and SLA information." },
@@ -343,7 +344,7 @@ export const supportxContent = {
         ]
       },
       {
-        icon: "settings",
+        icon: <FaCog />,
         title: "For Managers",
         items: [
            { title: "Executive Dashboards", description: "High-level KPIs, trend analysis, and predictive planning." },

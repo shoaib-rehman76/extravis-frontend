@@ -14,7 +14,7 @@ const SecurityCompliance = ({ title, description, security, privacy, compliance 
   };
 
   return (
-    <section className="py-20 border-t border-gray-800">
+    <section className="py-10 lg:py-20 border-t border-gray-800">
       <SectionHeader title={title} description={description} />
       
       <Wrapper>

@@ -22,9 +22,9 @@ const MontexProductPage = () => {
 
       <KeyFeatures {...monetxContent.keyFeatures} />
 
-      <section className="py-20 border-t border-gray-800">
+      {/* <section className="py-20 border-t border-gray-800"> */}
         <IndustrySpecs {...monetxContent.industrySpecs} />
-      </section>
+      {/* </section> */}
 
       <TechnicalSpecs {...monetxContent.technicalSpecs} />
 

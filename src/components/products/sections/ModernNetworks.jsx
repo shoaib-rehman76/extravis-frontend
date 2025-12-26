@@ -17,7 +17,7 @@ const ModernNetworks = ({ title, subtitle, description, cards }) => {
   };
 
   return (
-    <section className="py-20 border-t border-gray-800 bg-gradient-to-b from-purple-900/10 via-transparent to-transparent">
+    <section className="py-10 lg:py-20 border-t border-gray-800 bg-gradient-to-b from-purple-900/10 via-transparent to-transparent">
       <div className="w-full">
         <SectionHeader title={title} description={description} />
 

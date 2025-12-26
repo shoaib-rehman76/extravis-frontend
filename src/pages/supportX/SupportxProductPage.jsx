@@ -31,20 +31,20 @@ const SupportxProductPage = () => {
       <IndustrySpecs {...supportxContent.industrySpecs} />
 
       {/* <TechnicalSpecs {...supportxContent.technicalSpecs} /> */}
-      
-      <ROIImpact {...supportxContent.roiImpact} />
+       <UserExperience {...supportxContent.userExperience} />
 
-      <UserExperience {...supportxContent.userExperience} />
-
-      <Pricing {...supportxContent.pricing} />
-
-      <ImplementationTraining {...supportxContent.implementationTraining} />
+      <IntegrationEcosystem {...supportxContent.integrationEcosystem} />
 
       <DeploymentOptions {...supportxContent.deploymentOptions} />
 
-      <SecurityCompliance {...supportxContent.securityCompliance} />
+       <SecurityCompliance {...supportxContent.securityCompliance} />
 
-      <IntegrationEcosystem {...supportxContent.integrationEcosystem} />
+        <ImplementationTraining {...supportxContent.implementationTraining} />
+
+      <ROIImpact {...supportxContent.roiImpact} />
+
+     
+      {/* <Pricing {...supportxContent.pricing} /> */}
 
       <GettingStarted {...supportxContent.gettingStarted} />
 
