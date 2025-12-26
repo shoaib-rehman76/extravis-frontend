@@ -10,6 +10,8 @@
     --color-primary-background: #090A0C;
     --color-primary-white: #FFFFFF;
     --color-primary-gradient: linear-gradient(90deg, var(--color-primary-teal) 0%, var(--color-primary-purple) 100%);
+    --color-primary-black:#27272A;
+    --color-text-dimmed:rgba(255, 255, 255, 0.72);
 
   }
 
