@@ -1,5 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import { BulbIcon, GlobeIcon, HandshakeIcon, HeartIcon, LeafIcon, TrustIcon } from '../../Shared/svg';
 import SectionTitle from '../../Shared/SectionTitle';
 const data = [
@@ -12,6 +15,8 @@ const data = [
 ]
 
 const WhatDrivesUs = () => {
+
+
     return (
         <div className="overflow-hidden bg-black py-24">
             <SectionTitle title="What Drives" subtitle="Everything We Do" />
@@ -23,8 +28,34 @@ const WhatDrivesUs = () => {
                 transition={{ duration: 0.8 }}
                 className="max-w-7xl mx-auto  relative  px-4 z-2 md:px-12 w-full overflow-hidden"
             >
-                <div
-                    className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-24 mt-16 z-2" >
+                {/* Mobile: carousel (1 card visible) */}
+                <div className="md:hidden mb-8">
+                    <Slider
+                        dots={true}
+                        infinite={false}
+                        arrows={false}
+                        speed={300}
+                        slidesToShow={1}
+                        slidesToScroll={1}
+                        adaptiveHeight={false}
+                    >
+                        {data.map((item, idx) => (
+                            <div key={idx} className="px-4">
+                                <motion.div
+                                    whileHover={{ scale: 1.02 }}
+                                    className="bg-[#0f0f0f]/80 backdrop-blur-sm p-6 rounded-2xl border border-gray-800 transition-all"
+                                >
+                                    <div className="border rounded-[14px] w-12 h-12 flex items-center justify-center border-gray-800 p-4 mb-4">{item.icon}</div>
+                                    <h4 className="text-white font-bold mb-2">{item.title}</h4>
+                                    <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
+                                </motion.div>
+                            </div>
+                        ))}
+                    </Slider>
+                </div>
+
+                {/* Desktop / Tablet: grid */}
+                <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-24 mt-16 z-2">
                     {data.map((item, idx) => (
                         <motion.div
                             key={idx}

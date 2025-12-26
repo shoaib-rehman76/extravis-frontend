@@ -1,5 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import { BriefcaseIcon, BulbIcon, CalculatorIcon, CommunicationIcon, EnergyIcon, GlobeIcon, HandshakeIcon, HeartIcon, LeafIcon, MinusIcon, PlusIcon, TrustIcon } from '../../Shared/svg';
 import SectionTitle from '../../Shared/SectionTitle';
 const items = [
@@ -66,6 +69,16 @@ const items = [
 
 
 const LeadersWorldwide = () => {
+    const sliderSettings = {
+        dots: true,
+        infinite: false,
+        arrows: false,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeight: false
+    };
+
     return (
         <>
             <SectionTitle title="Trusted by Industry" subtitle="Leaders Worldwide" />
@@ -78,8 +91,48 @@ const LeadersWorldwide = () => {
                         transition={{ duration: 0.8 }}
                         className=" "
                     >
+                        {/* Mobile carousel (one item at a time) */}
+                        <div className="md:hidden mb-8">
+                            <Slider {...sliderSettings} aria-label="Trusted by industry carousel">
+                                {items.map((item, idx) => (
+                                    <div key={idx} className="px-4">
+                                        <motion.div
+                                            whileHover={{ scale: 1.02 }}
+                                            className="backdrop-blur-sm p-6 rounded-2xl border border-gray-800 transition-all"
+                                            style={{ background: item.bg }}
+                                        >
+                                            <div className="flex items-center justify-start gap-4">
+                                                <div className={`border rounded-[14px] w-12 h-12 flex items-center justify-center border-gray-800 ${item.colorClass}`}>{item.icon}</div>
+                                                <p className='text-white font-bold text-2xl'>{item.title}</p>
+                                            </div>
+                                            <ul className="mt-6 space-y-4">
+                                                {item.listItems.map((x, i) => (
+                                                    <li
+                                                        key={i}
+                                                        className="relative bg-(--color-blue-dimmed) p-4 pl-10 rounded-[10px]"
+                                                    >
+                                                        {/* Custom bullet */}
+                                                        <span className="absolute left-4 top-6 text-(--color-text-dimmed)">
+                                                            •
+                                                        </span>
+
+                                                        <h4 className="text-white text-lg font-medium leading-snug">
+                                                            {x.title}
+                                                        </h4>
+                                                        <p className="text-(--color-text-dimmed) text-base mt-1">
+                                                            {x.desc}
+                                                        </p>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </motion.div>
+                                    </div>
+                                ))}
+                            </Slider>
+                        </div>
+
                         <div
-                            className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mb-24 mt-20 z-2" >
+                            className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mb-24 mt-20 z-2" >
                             {items.map((item, idx) => (
                                 <motion.div
                                     key={idx}

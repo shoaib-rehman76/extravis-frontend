@@ -7,13 +7,17 @@
     --color-primary-purple: #9810FA;
     --color-primary-blue: #155DFC;
     --color-primary-teal: #0092B8;
+    --color-light-blue:#8EC5FF;
     --color-primary-background: #090A0C;
     --color-primary-white: #FFFFFF;
     --color-primary-gradient: linear-gradient(90deg, var(--color-primary-teal) 0%, var(--color-primary-purple) 100%);
     --color-primary-black:#27272A;
     --color-text-dimmed:rgba(255, 255, 255, 0.72);
     --color-blue-dimmed:rgba(15, 23, 43, 0.5);
-
+    --color-border-dimmed:rgba(98, 96, 180, 0.19);
+    --color-primary-background-dimmed:rgba(25, 25, 46, 0.36);
+    --color-primary-icon-blue:#51A2FF;
+    --color-grey-light:#D1D5DC;
   }
 
   * {
@@ -109,6 +113,81 @@
     box-shadow: 0 15px 40px rgba(12, 12, 20, 0.45);
   }
 
+  /* Hide scrollbars for the mobile carousels */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+
+  /* Slick dots custom */
+  .slick-dots {
+    bottom: 0;
+  }
+    .slick-dots li  {
+    width:10px !important;
+    height:10px !important;
+  }
+  .slick-dots li button {
+    padding: 0;
+    background: var(--color-grey-light) !important;
+    border-radius: 50%;
+    width:10px !important;
+    height:10px !important;
+  }
+  .slick-dots li button:before {
+    content: '';
+    display: inline-block;
+    width: .5rem;
+    height: .5rem;
+    border-radius: 9999px;
+    background: rgba(107,114,128,0.35);
+    opacity: 0 !important;
+    display: none !important;
+  }
+    .slick-dots li.slick-active button {
+ 
+    background: var(--color-primary-icon-blue) !important;
+ 
+  }
+
+  /* Customers slider specific dot styling */
+  /* .customer-slider-container .slick-dots li .dot-custom {
+    width: 10px;
+    height: 10px;
+    border-radius: 9999px;
+    background: rgba(255,255,255,0.18);
+    transition: background 0.2s ease;
+  }
+  .customer-slider-container .slick-dots li.slick-active .dot-custom {
+    background: #ffffff;
+  }
+  .customer-slider-container .slick-dots {
+    margin-top: 0.75rem;
+    display:flex !important;
+    justify-content:center;
+    gap:8px;
+  }
+  .customer-slider-container .slick-prev, .customer-slider-container .slick-next {
+    color: white;
+    z-index: 2;
+  }
+  .customer-slider-container .slick-prev:before, .customer-slider-container .slick-next:before {
+    color: white;
+    font-size: 20px;
+  } */
+
+  /* Prevent slide height jumps: make slides a consistent min-height and let inner content stretch */
+  .slick-slider .slick-list {
+    min-height: 260px; /* adjust if needed based on design */
+  }
+  .slick-slide > div { height: 100%; }
+  .slick-slide > div > * { height: 100%; display: flex; flex-direction: column; justify-content: flex-start; }
+  @media (min-width: 768px) {
+    .slick-slider .slick-list { min-height: 0; }
+  }
   .flagship-card {
     background: radial-gradient(circle at 10% 20%, rgba(152, 16, 250, 0.35), rgba(9, 10, 12, 0.95));
     border: 1px solid rgba(255, 255, 255, 0.08);

@@ -53,41 +53,47 @@ const testimonials = [
 ];
 
 const CustomersSection = () => {
+    const slidesToShowDefault = Math.min(1, testimonials.length);
+
     const settings = {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: slidesToShowDefault,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 5000,
         arrows: false,
         responsive: [
             {
+                // desktop/tablet
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: Math.min(2, testimonials.length),
                     slidesToScroll: 1,
+                    arrows: true
                 }
             },
             {
-                breakpoint: 640,
+                // small tablets and phones — force 1 item
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    arrows: false
+                }
+            },
+            {
+                // very small phones
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false
                 }
             }
         ],
-        appendDots: dots => (
-            <div style={{ bottom: "-40px" }}>
-                <ul style={{ margin: "0px" }}> {dots} </ul>
-            </div>
-        ),
-        customPaging: i => (
-            <div
-                className="w-2.5 h-2.5 rounded-full bg-white/20 hover:bg-white/50 transition-all duration-300 dot-custom"
-            />
-        )
+
     };
 
     return (
@@ -105,8 +111,8 @@ const CustomersSection = () => {
                 <div className="customer-slider-container px-2">
                     <Slider {...settings}>
                         {testimonials.map((item) => (
-                            <div key={item.id} className="px-3">
-                                <div className="bg-[#0A0A0E] border border-white/10 rounded-xl p-8 h-full flex flex-col justify-between relative group hover:border-purple-500/30 transition-colors duration-300">
+                            <div key={item.id} className="px-3 md:px-4">
+                                <div className="bg-[#0A0A0E] border border-white/10 rounded-xl p-6 md:p-8 h-full flex flex-col justify-between relative group hover:border-purple-500/30 transition-colors duration-300">
                                     {/* Gradient Glow Effect */}
                                     <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-purple-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
