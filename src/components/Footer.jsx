@@ -4,10 +4,10 @@ import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 const Footer = () => {
     const footerLinks = {
         products: [
-            { name: "MonetX", href: "#" },
-            { name: "GraceX", href: "#" },
+            { name: "MonetX", href: "/monetx" },
+            { name: "GreenX", href: "#" },
             { name: "ViewSMS", href: "#" },
-            { name: "SupportX", href: "#" }
+            { name: "SupportX", href: "/supportx" }
         ],
         resources: [
             { name: "SaaS Ally", href: "#" },
