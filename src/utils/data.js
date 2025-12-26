@@ -177,28 +177,28 @@ export const automationAndDigitalSolution = [
     id: 1,
     title: "Cloud & Security Automation",
     description:
-      "Drive a continuous cloud security posture across multi-cloud environments, and automate incident response for faster agility and speed.",
+      "Enforce cloud security policies, enable real‑time threat detection and automate compliance with frameworks such as ISO 27001 and GDPR.",
     image: "../../assets/home/digital-solution/1.png",
   },
   {
     id: 2,
     title: "Network Automation",
     description:
-      "We provide comprehensive network flow automation covering provisioning, monitoring, troubleshooting, and optimization.",
+      "Automate configuration, provisioning, monitoring and troubleshooting to reduce manual effort and mitigate errors.",
     image: "../../assets/home/digital-solution/2.png",
   },
   {
     id: 3,
     title: "DevSecOps Enablement",
     description:
-      "We integrate security into the Dev Ops pipeline to assure rapid, compliant, and secure software delivery.",
+      "Secure your pipelines and ensure rapid, compliant software delivery.",
     image: "../../assets/home/digital-solution/3.png",
   },
   {
     id: 4,
     title: "Custom Software",
     description:
-      "We integrate security containers to ensure rapid, compliant, and secure service.",
+      "Build custom applications and integrations tailored to your unique workflows.",
     image: "../../assets/home/digital-solution/4.png",
   },
 ];

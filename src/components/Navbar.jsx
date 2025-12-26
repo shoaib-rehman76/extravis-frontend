@@ -8,12 +8,12 @@ export default function Navbar() {
   const [openDropdown, setOpenDropdown] = useState(null);
 
   return (
-    <div className="my-6 flex justify-between items-center relative z-50">
+    <div className="py-4 flex justify-between items-center relative z-50">
       <div>
         <img
           src="../assets/logo.svg"
           alt="logo"
-          className="w-[140px] h-[140]"
+          className="w-[140px] h-auto"
         />
       </div>
 
@@ -29,11 +29,10 @@ export default function Navbar() {
               to={link.url}
               className={({ isActive }) => `
                   text-[.9rem] font-[400] pb-1 transition-all duration-300
-                  ${
-                    isActive
-                      ? "text-white font-medium bg-gradient-to-r from-purple-500 to-blue-500 bg-[length:100%_2px] bg-no-repeat bg-bottom"
-                      : "text-gray-300 hover:text-white"
-                  }
+                  ${isActive
+                  ? "text-white font-medium bg-gradient-to-r from-purple-500 to-blue-500 bg-[length:100%_2px] bg-no-repeat bg-bottom"
+                  : "text-gray-300 hover:text-white"
+                }
                 `}
             >
               {link.title}
@@ -41,11 +40,10 @@ export default function Navbar() {
 
             {link.isChild && (
               <RiArrowDropDownLine
-                className={`w-6 h-6 transition-transform duration-300 ${
-                  openDropdown === link.id
+                className={`w-6 h-6 transition-transform duration-300 ${openDropdown === link.id
                     ? "rotate-180 text-purple-400"
                     : "text-gray-300"
-                }`}
+                  }`}
               />
             )}
 
