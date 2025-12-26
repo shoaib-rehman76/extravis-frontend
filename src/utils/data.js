@@ -40,7 +40,7 @@ export const navLinks = [
     isActive: false,
   },
   {
-    id: 4,
+    id: 6,
     title: "FAQS",
     url: "/faqs",
     isChild: false,

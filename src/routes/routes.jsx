@@ -3,9 +3,9 @@ import { Home } from "../pages/home/Home";
 import Products from "../pages/products/Products";
 import { Layout } from "../components/Layout";
 import { Services } from "../pages/services/Services";
-import MontexProductPage  from "../pages/monetX/MontexProductPage";
+import MontexProductPage from "../pages/monetX/MontexProductPage";
 import SupportxProductPage from "../pages/supportX/SupportxProductPage";
-// import { About } from "../pages/about/About";
+import AboutUs from "../pages/aboutUs/AboutUs";
 
 const RoutesIndex = () => {
   const routes = createBrowserRouter([
@@ -40,7 +40,7 @@ const RoutesIndex = () => {
           <MontexProductPage />
         </Layout>
       ),
-    },    
+    },
     {
       path: "/supportx",
       element: (
@@ -48,11 +48,12 @@ const RoutesIndex = () => {
           <SupportxProductPage />
         </Layout>
       ),
-    },    
-    // {
-    //   path: "/about",
-    //   element: <About />,
-    // },
+    },
+
+    {
+      path: "/about",
+      element: <Layout><AboutUs /></Layout>,
+    },
   ]);
 
   return <RouterProvider router={routes} />;
