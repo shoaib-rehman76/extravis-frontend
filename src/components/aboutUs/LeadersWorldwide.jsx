@@ -1,48 +1,67 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { BulbIcon, GlobeIcon, HandshakeIcon, HeartIcon, LeafIcon, MinusIcon, PlusIcon, TrustIcon } from '../../Shared/svg';
+import { BriefcaseIcon, BulbIcon, CalculatorIcon, CommunicationIcon, EnergyIcon, GlobeIcon, HandshakeIcon, HeartIcon, LeafIcon, MinusIcon, PlusIcon, TrustIcon } from '../../Shared/svg';
 import SectionTitle from '../../Shared/SectionTitle';
 const items = [
     {
-        year: "2021",
-        title: "Foundation",
-        desc: "Established headquarters in Horsham, England and launched development center in Islamabad, Pakistan.",
-        icon: "/assets/services/domain.svg",
-        color: "bg-purple-600",
-        listItems: ["Established headquarters in Horsham, England", "Launched development center in Islamabad, Pakistan", "Initial focus on European and South Asian markets", "Built foundational team of 15 professionals"]
+        title: "Telecommunications & Technology",
+        desc: "Regional technology partnerships and major service provider relationships.",
+        icon: <CommunicationIcon />,
+        bg: "linear-gradient(135deg, rgba(43, 127, 255, 0.2) 0%, rgba(0, 184, 219, 0.2) 100%)",
+        colorClass: "bg-sky-600",
+        listItems: [
+            { title: "Cisco", desc: "Global technology partnership and customer relationship" },
+            { title: "Etisalat", desc: "Major regional telecommunications provider in UAE" },
+            { title: "FullFiber", desc: "UK fiber‑optic network provider" },
+            { title: "NETS", desc: "Pakistan telecommunications infrastructure provider" },
+            { title: "Multinet", desc: "Regional telecommunications and infrastructure provider" }
+        ]
     },
     {
-        year: "2022",
-        title: "Middle East Expansion",
-        desc: "Intelligent automation adapts to changing conditions; knowledge capture ensures systematic reuse of operational knowledge;process integration aligns workflows and procedures; continuous improvement makes automation smarter over time.",
-        icon: "/assets/services/partnership.svg",
-        color: "bg-purple-600",
-        listItems: ["Opened regional office in Dubai, UAE", "Established partnerships in Oman for telecommunications sector", "Began serving major regional telecommunications providers", "Achieved regional compliance certifications"]
+        title: "Financial Services",
+        desc: "Technology and infrastructure partnerships across banking and financial institutions.",
+        icon: <BriefcaseIcon />,
+        bg: "linear-gradient(135deg, rgba(0, 188, 125, 0.2) 0%, rgba(0, 201, 80, 0.2) 100%)",
+        colorClass: "bg-emerald-700",
+        listItems: [
+            { title: "HBL", desc: "Habib Bank Limited, major Pakistani financial institution" },
+            { title: "Allied Telesis", desc: "Financial services technology infrastructure" },
+            { title: "PTCL", desc: "Pakistan Telecommunications Company Limited" }
+        ]
     },
     {
-        year: "2023",
-        title: "European Growth",
-        desc: "Expanded operations to Central and Southern Europe with dedicated partnerships and localized support.",
-        icon: "/assets/services/tailored.svg",
-        color: "bg-blue-600",
-        listItems: ["Expanded operations to Frankfurt, Germany", "Established Italian partnerships for financial services sector", "Achieved GDPR compliance for European operations", "Launched localized support in multiple European languages"]
+        title: "Healthcare",
+        desc: "Strategic partnerships with leading healthcare providers and systems.",
+        icon: <HeartIcon />,
+        bg: "linear-gradient(135deg, rgba(255, 32, 86, 0.2) 0%, rgba(246, 51, 154, 0.2) 100%)",
+        colorClass: "bg-rose-700",
+        listItems: [
+            { title: "As‑Salam International Hospital", desc: "Major healthcare provider" },
+            { title: "Multiple Regional Healthcare Systems", desc: "(confidential relationships)" }
+        ]
     },
     {
-        year: "2024",
-        title: "North American Entry",
-        desc: "Opened North American headquarters in Toronto and established US operations for enterprise markets.",
-        icon: "/assets/services/methodology.svg",
-        color: "bg-blue-600",
-        listItems: ["Opened North American headquarters in Toronto, Canada, Canada", "Established US operations for enterprise and cloud service provider markets", "Built strategic partnerships with major systems integrators", "Achieved SOC 2 Type II compliance for North American markets"]
+        title: "Energy & Utilities",
+        desc: "Partnerships with regional utilities and asset owners across the Middle East.",
+        icon: <EnergyIcon />,
+        bg: "linear-gradient(135deg, rgba(254, 154, 0, 0.2) 0%, rgba(255, 105, 0, 0.2) 100%)",
+        colorClass: "bg-amber-700",
+        listItems: [
+            { title: "SAPCO", desc: "Sharjah Asset & Project Company, UAE" },
+            { title: "Multiple Regional Utilities", desc: "Across Middle East and South Asia" }
+        ]
     },
     {
-        year: "2025",
-        title: "Middle East Growth",
-        desc: "Expanded to Saudi Arabia supporting Vision 2030 digital transformation initiatives.",
-        icon: "/assets/services/methodology.svg",
-        color: "bg-blue-600",
-        listItems: ["Expanded to Riyadh, Saudi Arabia", "Established partnerships for Vision 2030 digital transformation initiatives", "Began serving major government and enterprise customers", "Localized solutions for regional regulatory requirements."]
-    },
+        title: "Government & Public Sector",
+        desc: "Supporting smart city and public sector digital transformation projects.",
+        icon: <CalculatorIcon />,
+        bg: "linear-gradient(135deg, rgba(97, 95, 255, 0.2) 0%, rgba(173, 70, 255, 0.2) 100%)",
+        colorClass: "bg-violet-700",
+        listItems: [
+            { title: "Dubai Municipality", desc: "Smart city infrastructure management" },
+            { title: "Multiple Government Agencies", desc: "(confidential relationships across multiple countries)" }
+        ]
+    }
 ];
 
 
@@ -51,29 +70,50 @@ const LeadersWorldwide = () => {
         <>
             <SectionTitle title="Trusted by Industry" subtitle="Leaders Worldwide" />
             <div className="bg-black py-24 px-4 md:px-12 w-full">
-                <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                <div className="max-w-7xl mx-auto  gap-16 items-start">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
-                        className="max-w-7xl mx-auto  relative   z-2  w-full overflow-hidden"
+                        className=" "
                     >
                         <div
-                            className=" grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-6 mb-24 mt-20 z-2" >
+                            className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mb-24 mt-20 z-2" >
                             {items.map((item, idx) => (
                                 <motion.div
                                     key={idx}
                                     whileHover={{ scale: 1.05 }}
-                                    className="bg-[#0f0f0f]/80 backdrop-blur-sm p-6 rounded-2xl border border-gray-800 hover:border-blue-500/30 transition-all hover:-translate-y-1"
+                                    className="backdrop-blur-sm p-6 rounded-2xl border border-gray-800 hover:border-blue-500/30 transition-all hover:-translate-y-1"
+                                    style={{ background: item.bg }}
                                 >
-                                    <div className="flex items-center justify-start">
-                                        <div className="border rounded-[14px] w-12 h-12 flex items-center justify-center border-gray-800 p-4 mb-4">{item.icon}</div>
-                                        <p>{item.title}</p>
+                                    <div className="flex items-center justify-start gap-4">
+                                        <div className={`border rounded-[14px] w-12 h-12 flex items-center justify-center border-gray-800 ${item.colorClass}`}>{item.icon}</div>
+                                        <p className='text-white font-bold text-2xl'>{item.title}</p>
                                     </div>
+                                    <ul className="mt-6 space-y-4">
+                                        {item.listItems.map((x, i) => (
+                                            <li
+                                                key={i}
+                                                className="relative bg-(--color-blue-dimmed) p-4 pl-10 rounded-[10px]"
+                                            >
+                                                {/* Custom bullet */}
+                                                <span className="absolute left-4 top-6 text-(--color-text-dimmed)">
+                                                    •
+                                                </span>
 
-                                    <h4 className="text-white text-2xl font-bold mb-2">{item.title}</h4>
-                                    <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
+                                                <h4 className="text-white text-lg font-medium leading-snug">
+                                                    {x.title}
+                                                </h4>
+                                                <p className="text-(--color-text-dimmed) text-base mt-1">
+                                                    {x.desc}
+                                                </p>
+                                            </li>
+                                        ))}
+                                    </ul>
+
+
+
                                 </motion.div>
                             ))}
                         </div>

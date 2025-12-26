@@ -1,24 +1,11 @@
 import React from 'react';
+import ContentWrapper from './ContentWrapper';
 
 const SectionTitle = ({ title, subtitle, children, className = '' }) => {
     return (
-        <section
-            className={`
-        relative w-full
-        bg-center bg-cover bg-no-repeat
-        flex items-center justify-center
-        text-center
-        min-h-[140px]
-        overflow-hidden
-        ${className}
-      `}
-            style={{
-                backgroundImage: "url('/assets/content-bg-1.png')",
-            }}
-        >
-
+        <ContentWrapper>
             {/* Content */}
-            <div className="relative z-10 px-4">
+            <div className="relative z-10 px-4 mx-auto text-center">
                 <h2 className="text-[40px] md:text-4xl font-bold text-white">
                     {title}
                 </h2>
@@ -29,7 +16,7 @@ const SectionTitle = ({ title, subtitle, children, className = '' }) => {
                 )}
                 {children}
             </div>
-        </section>
+        </ContentWrapper>
     );
 };
 
