@@ -1,6 +1,7 @@
 import { Wrapper } from "../Shared/Wrapper";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
+import ScrollToTop from "../Shared/ScrollToTop";
 
 export const Layout = ({ children }) => {
   return (
@@ -10,6 +11,7 @@ export const Layout = ({ children }) => {
       </Wrapper>
       {children}
       <Footer />
+      <ScrollToTop />
     </>
   );
 };

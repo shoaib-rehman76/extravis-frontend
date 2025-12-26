@@ -6,6 +6,10 @@ import TrustIcon from './Icons/TrustIcon';
 import GlobeIcon from './Icons/GlobeIcon';
 import LeafIcon from './Icons/LeafIcon';
 import HandshakeIcon from './Icons/HandshakeIcon';
+import CommunicationIcon from './Icons/CommunicationIcon';
+import BriefcaseIcon from './Icons/BriefcaseIcon';
+import EnergyIcon from './Icons/EnergyIcon';
+import CalculatorIcon from './Icons/CalculatorIcon';
 
 export {
   PlusIcon,
@@ -15,5 +19,9 @@ export {
   TrustIcon,
   GlobeIcon,
   LeafIcon,
-  HandshakeIcon
+  HandshakeIcon,
+  CommunicationIcon,
+  BriefcaseIcon,
+  EnergyIcon,
+  CalculatorIcon
 };

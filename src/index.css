@@ -12,6 +12,7 @@
     --color-primary-gradient: linear-gradient(90deg, var(--color-primary-teal) 0%, var(--color-primary-purple) 100%);
     --color-primary-black:#27272A;
     --color-text-dimmed:rgba(255, 255, 255, 0.72);
+    --color-blue-dimmed:rgba(15, 23, 43, 0.5);
 
   }
 
