@@ -1,0 +1,19 @@
+services:
+  extravis-static-frontend:
+    container_name: extravis-static-frontend
+    image: extravis-static-frontend:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    expose:
+      - "8080"
+
+    networks:
+      - extravis_network
+
+    restart: unless-stopped
+
+networks:
+  extravis_network:
+    external: true
