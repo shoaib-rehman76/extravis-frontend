@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from '../../components/services/hero';
 import ServicePhilosophy from '../../components/services/ServicePhilosophy';
+import ServiceDeliveryModels from '../../components/services/ServiceDeliveryModels';
 import CloudSecurity from '../../components/services/CloudSecurity';
 import NetworkAutomation from '../../components/services/NetworkAutomation';
 import ServiceOfferings from '../../components/services/ServiceOfferings';
@@ -14,6 +15,7 @@ export const Services = () => {
             <div className="bg-black/80 w-full min-h-screen"> {/* Overlay to ensure text readability */}
                 <Hero />
                 <ServicePhilosophy />
+                <ServiceDeliveryModels />
                 <CloudSecurity />
                 <NetworkAutomation />
                 <ServiceOfferings />

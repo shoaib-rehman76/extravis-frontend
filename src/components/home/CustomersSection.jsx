@@ -28,28 +28,28 @@ const testimonials = [
             avatar: "https://i.pravatar.cc/150?u=a042581f4e29026704e"
         }
     },
-    {
-        id: 3,
-        company: "GreenX",
-        review: "Optimise data‑centre energy usage and track carbon footprints with AI‑powered analytics. GreenX uses real‑time monitoring and intelligent workload management to reduce costs and meet environmental goals.",
-        result: "Telecommunications Leader Achieves 99.9% Uptime.",
-        user: {
-            name: "Patrick, Lubbock, TX",
-            date: "July 2024",
-            avatar: "https://i.pravatar.cc/150?u=a042581f4e29026704f"
-        }
-    },
-    {
-        id: 4,
-        company: "MapX",
-        review: "Streamline workflow management, resource planning and project tracking with a unified tool. MapX centralises project information and accelerates execution across teams.",
-        result: "Telecommunications Leader Achieves 99.9% Uptime.",
-        user: {
-            name: "Patrick, Lubbock, TX",
-            date: "Aug 2024",
-            avatar: "https://i.pravatar.cc/150?u=a042581f4e29026704g"
-        }
-    }
+    // {
+    //     id: 3,
+    //     company: "GreenX",
+    //     review: "Optimise data‑centre energy usage and track carbon footprints with AI‑powered analytics. GreenX uses real‑time monitoring and intelligent workload management to reduce costs and meet environmental goals.",
+    //     result: "Telecommunications Leader Achieves 99.9% Uptime.",
+    //     user: {
+    //         name: "Patrick, Lubbock, TX",
+    //         date: "July 2024",
+    //         avatar: "https://i.pravatar.cc/150?u=a042581f4e29026704f"
+    //     }
+    // },
+    // {
+    //     id: 4,
+    //     company: "MapX",
+    //     review: "Streamline workflow management, resource planning and project tracking with a unified tool. MapX centralises project information and accelerates execution across teams.",
+    //     result: "Telecommunications Leader Achieves 99.9% Uptime.",
+    //     user: {
+    //         name: "Patrick, Lubbock, TX",
+    //         date: "Aug 2024",
+    //         avatar: "https://i.pravatar.cc/150?u=a042581f4e29026704g"
+    //     }
+    // }
 ];
 
 const CustomersSection = () => {
