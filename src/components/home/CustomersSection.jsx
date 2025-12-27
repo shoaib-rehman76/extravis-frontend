@@ -59,42 +59,30 @@ const CustomersSection = () => {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: slidesToShowDefault,
+        slidesToShow: Math.min(3, testimonials.length), // DESKTOP DEFAULT
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 5000,
         arrows: false,
+
         responsive: [
             {
-                // desktop/tablet
-                breakpoint: 1024,
+                breakpoint: 1024, // tablets
                 settings: {
                     slidesToShow: Math.min(2, testimonials.length),
-                    slidesToScroll: 1,
-                    arrows: true
+                    arrows: true,
                 }
             },
             {
-                // small tablets and phones — force 1 item
-                breakpoint: 768,
+                breakpoint: 768, // mobile
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1,
-                    arrows: false
-                }
-            },
-            {
-                // very small phones
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    arrows: false
+                    arrows: false,
                 }
             }
-        ],
-
+        ]
     };
+
 
     return (
         <ContentWrapper>
