@@ -1,10 +1,13 @@
+import { BsBoundingBox } from "react-icons/bs";
 import { FaCheckCircle } from "react-icons/fa";
+import { LuSettings } from "react-icons/lu";
+import { RxTarget } from "react-icons/rx";
 
 const ServiceDeliveryModels = () => {
     const serviceCards = [
         {
             id: 1,
-            icon: "💼",
+            icon: <BsBoundingBox />,
             title: "Professional Services",
             description: "Engage our experts for project-based implementations, migrations, and custom solutions.",
             features: [
@@ -16,7 +19,7 @@ const ServiceDeliveryModels = () => {
         },
         {
             id: 2,
-            icon: "⚙️",
+            icon: <LuSettings />,
             title: "Managed Services",
             description: "Ongoing management and optimization of implemented solutions with proactive monitoring.",
             features: [
@@ -28,7 +31,7 @@ const ServiceDeliveryModels = () => {
         },
         {
             id: 3,
-            icon: "💡",
+            icon: <RxTarget />,
             title: "Consulting & Advisory",
             description: "Strategic consulting to help organizations plan their digital transformation journeys.",
             features: [
@@ -44,33 +47,19 @@ const ServiceDeliveryModels = () => {
         {
             id: 1,
             title: "Enterprise Infrastructure",
-            image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1600&auto=format&fit=crop"
+            image: "../../assets/services/enterprise-infra.jpg"
         },
         {
             id: 2,
             title: "Smart Automation",
-            image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1600&auto=format&fit=crop"
+            image: "../../assets/services/smart-auto.jpg"
         },
         {
             id: 3,
             title: "Advanced Security",
-            image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1600&auto=format&fit=crop"
+            image: "../../assets/services/advance-security.jpg"
         },
-        {
-            id: 4,
-            title: "Cloud Solutions",
-            image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1600&auto=format&fit=crop"
-        },
-        {
-            id: 5,
-            title: "Network Optimization",
-            image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=1600&auto=format&fit=crop"
-        },
-        {
-            id: 6,
-            title: "AI Integration",
-            image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1600&auto=format&fit=crop"
-        }
+       
     ];
 
     return (

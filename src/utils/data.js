@@ -58,75 +58,73 @@ export const navLinks = [
 export const ourFlagShipProducts = [
   {
     id: 1,
-    title: "Monetx",
-    sub_title: "Automated Ticket Routing",
+    title: "MonetX",
+    sub_title: "Unified Network Observability & Automation Platform",
     sub_description:
       "Uses AI to assign tickets to the right experts instantly, eliminating delays and manual guesswork. With NLP and machine learning, it ensures smart routing, balanced workloads, timely escalations, and seamless integration with your existing ticketing systems.",
-    description:
-      "Meet your sustainability goals while reducing operational costs. MonetX provides real-time energy monitoring, carbon footprint tracking, and intelligent optimization for more environmentally responsible IT operations.",
+    description: "Perfect for: Network Engineers, NOC Teams, IT Operations",
     image: "../../assets/home/products/monetx.svg",
-    button: "Explore Monetx",
+    button: "Explore MonetX",
     features: [
       {
-        title: "Real-Time Metrics & Monitoring",
+        title: "Real-Time Multi-Vendor Monitoring",
         description:
-          "Unified, live visibility across infrastructure health, performance, and SLA adherence with AI-powered alerts.",
+          "Unified, live visibility across infrastructure health, performance, and SLA adherence.",
       },
       {
-        title: "Unified Infrastructure Insights",
+        title: "AI-Driven Anomaly Detection",
         description:
-          "Correlate application, network, and cloud telemetry in one command center for faster issue isolation.",
+          "Correlate application, network, and cloud telemetry to detect issues before they impact users.",
       },
       {
-        title: "AI-Driven Reporting & Analytics",
+        title: "Automated Incident Remediation",
         description:
-          "Generate predictive capacity models and business-ready reports with drag-and-drop dashboards.",
+          "Trigger auto-remediation workflows for known issues to reduce MTTR.",
       },
       {
-        title: "Seamless Integration Platform",
+        title: "Unified Topology & Dependency Mapping",
         description:
-          "100+ pre-built connectors and low-code workflows plug MonetX into existing ITSM, APM, and observability stacks.",
+          "Visualize the entire IT estate and understand dependencies at a glance.",
       },
       {
-        title: "Advanced Customization Engine",
+        title: "Predictive Performance & Capacity Analytics",
         description:
-          "Design bespoke runbooks, KPIs, and visualizations with reusable widgets and role-based views.",
+          "Forecast resource needs and optimize capacity planning with AI-driven insights.",
       },
     ],
   },
   {
     id: 2,
-    title: "Supportx",
-    sub_title: "Automated Ticket Routing",
+    title: "SupportX",
+    sub_title: "Intelligent IT Service Management & Helpdesk Automation",
     sub_description:
       "Uses AI to assign tickets to the right experts instantly, eliminating delays and manual guesswork. With NLP and machine learning, it ensures smart routing, balanced workloads, timely escalations, and seamless integration with your existing ticketing systems.",
-    description:
-      "Revolutionize your IT support operations with intelligent automation that routes tickets perfectly, tracks SLAs automatically, and reduces response times by up to 50% while improving team efficiency.",
+    description: "Perfect for: IT Support Teams, Service Desk Managers, Enterprises",
     image: "../../assets/home/products/supportx.svg",
-    button: "Explore Supportx",
+    button: "Explore SupportX",
     features: [
       {
-        title: "AI Ticket Prioritization",
+        title: "AI-Powered Ticket Categorization & Routing",
         description:
           "Natural language processing classifies urgency and impact before tickets hit the queue.",
       },
       {
-        title: "Self-Healing Knowledge Hub",
-        description:
-          "Surface contextual runbooks to agents and trigger auto-remediation for known issues.",
-      },
-      {
-        title: "Omni-Channel Experience",
-        description:
-          "Seamless support across chat, email, voice, and embedded widgets with unified history.",
-      },
-      {
-        title: "SLA Guardian",
+        title: "Automated SLA Tracking & Escalations",
         description:
           "Predictive breach alerts and automated escalations keep commitments intact.",
       },
       {
-        title: "Team Performance Analytics",
+        title: "Intelligent Knowledge Base Automation",
+        description:
+          "Surface contextual runbooks to agents and trigger auto-remediation for known issues.",
+      },
+      {
+        title: "Multi-Channel Support Integration",
+        description:
+          "Seamless support across chat, email, voice, and embedded widgets with unified history.",
+      },
+      {
+        title: "Advanced Service Analytics & Performance Insights",
         description:
           "Track utilization, CSAT, and backlog velocity with live coachable insights.",
       },

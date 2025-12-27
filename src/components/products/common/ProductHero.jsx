@@ -46,7 +46,7 @@ const ProductHero = ({
               onClick={onButtonClick}
               className="px-8 py-3 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 text-white rounded-lg font-medium transition-all transform hover:scale-105 shadow-lg shadow-purple-500/50"
             >
-              {buttonText} →
+              {buttonText} 
             </button>
           </div>
         </div>

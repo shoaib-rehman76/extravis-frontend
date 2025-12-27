@@ -1,13 +1,17 @@
 import React from 'react';
 import { VscTypeHierarchySub } from 'react-icons/vsc';
-import { FaFile, FaUserDoctor, FaChartBar, FaNetworkWired, FaUsers, FaHeadphones } from 'react-icons/fa6';
-import { TbAlignBoxCenterStretch, TbHierarchy } from 'react-icons/tb';
+import { FaFile, FaUserDoctor, FaChartBar, FaNetworkWired, FaUsers, FaHeadphones, FaRegChartBar } from 'react-icons/fa6';
+import { MdOutlineVisibility } from "react-icons/md";
+import { TbAlignBoxCenterStretch, TbHierarchy, TbHierarchy3 } from 'react-icons/tb';
 import { PiBrainThin, PiHandTapLight } from 'react-icons/pi';
 import { LuUsersRound } from 'react-icons/lu';
 import { GoServer } from 'react-icons/go';
-import { CiGlobe } from 'react-icons/ci';
-import { FiKey, FiShield, FiFileText, FiAward } from 'react-icons/fi';
+import { CiGlobe, CiFileOn } from 'react-icons/ci';
+import { FiKey, FiShield, FiFileText, FiAward, FiAlertTriangle } from 'react-icons/fi';
 import { FaCog } from 'react-icons/fa';
+import { IoMdCloudOutline } from "react-icons/io";
+import { HiOutlineBolt } from "react-icons/hi2";
+import { RxTarget } from "react-icons/rx";
 
 export const supportxContent = {
   hero: {
@@ -25,128 +29,122 @@ export const supportxContent = {
         </span>
       </>
     ),
-    description: "Reduce ticket chaos, improve SLA compliance and deliver exceptional support with SupportX, Extravis’s AI‑powered service management platform.",
-    buttonText: "Start a free trial",
+    description: "Transform your IT support operations with intelligent ticketing, SLA automation, real-time collaboration, and enterprise-grade control.",
+    buttonText: "Get Started",
     secondaryButtonText: "Talk to our sales team",
     backgroundImage: "../assets/montex/hero-bg.png",
     heroImage: "../assets/supportx/hero-img-supportx.png",
-    // featureTags: [
-    //   { position: "bottom-8 left-0", icon: "🛠️", label: "Auto-Resolution" },
-    //   { position: "bottom-8 right-0", icon: "📈", label: "Predictive Ticketing" }
-    // ]
   },
   modernNetworks: {
-    title: "Challenges We Solve",
+    // title: "Challenges We Solve",
+    title:{prefix:"Challenges", highlight:'We Solve'},
     description: "Traditional support models lead to ticket chaos, missed SLAs, wasted resources, user frustration and hidden knowledge gaps. SupportX turns reactive firefighting into proactive service excellence.",
     cards: [
-      { icon: "IoMdCloudOutline", title: "Ticket Chaos", description: "Overwhelming volume of unorganized requests." },
-      { icon: "FiAlertTriangle", title: "Missed SLAs", description: "Deadlines breached due to manual routing." },
-      { icon: "HiOutlineBolt", title: "Wasted Resources", description: "skilled agents solving repetitive issues." },
-      { icon: "LuUsersRound", title: "User Frustration", description: "Slow response times impacting satisfaction." },
-      { icon: "FaNetworkWired", title: "Knowledge Gaps", description: "Critical solutions locked in individual silos." }
+      { icon: <IoMdCloudOutline />, title: "Ticket Chaos", description: "Overwhelming volume of unorganised requests flooding your support queue." },
+      { icon: <FiAlertTriangle />, title: "Missed SLAs", description: "Deadlines breached due to manual routing and lack of real-time visibility." },
+      { icon: <HiOutlineBolt />, title: "Wasted Resources", description: "Deadlines breached due to manual routing and lack of real-time visibility." },
+      { icon: <LuUsersRound />, title: "User Frustration", description: "Slow response times and poor communication impacting satisfaction scores." },
+      { icon: <FaNetworkWired />, title: "Knowledge Gaps", description: "Critical solutions locked in individual silos, lost when employees leave." },
+      { icon: <MdOutlineVisibility />, title: "Limited Visibility", description: "No real-time insights into ticket status, team performance or bottlenecks." }
     ]
   },
   commandCenter: {
-    title: { prefix: "Core", highlight: "Features", suffix: "" },
+    title: { prefix: "Intelligent Support ", highlight: "That Actually Supports", suffix: "" },
+    description: "From intake to resolution, SupportX automates every step, so your team focuses on solving problems, not managing processes.",
     steps: [
-      { color: "blue", icon: "TbHierarchy3", title: "Smart Intake & Routing", description: "AI analyses incoming requests across all channels to determine urgency and assign to the right expert, preventing bottlenecks." },
-      { color: "purple", icon: "PiBrainThin", title: "Automated Tracking", description: "Monitors SLA compliance, notifies teams of deadlines, and auto‑escalates tasks so nothing falls through the cracks." },
-      { color: "yellow", icon: "HiOutlineBolt", title: "AI‑Powered Knowledge", description: "Builds a dynamic knowledge base that surfaces relevant answers and enables self‑service, keeping solutions current." },
-      { color: "green", icon: "RxTarget", title: "Advanced Analytics", description: "Trend analysis, predictive planning, and resource optimisation allow you to continually improve service delivery." }
+      { color: "blue", icon: "TbHierarchy3", title: "Smart Intake", description: "AI analyses incoming requests across all channels to determine issue type, urgency and expertise required." },
+      { color: "purple", icon: "PiBrainThin", title: "Intelligent Routing", description: "Tickets automatically assigned to the right agent based on skills, workload and historical performance." },
+      { color: "yellow", icon: "HiOutlineBolt", title: "Automated Tracking", description: "Real-time SLA monitoring with proactive escalation and stakeholder notifications." },
+      { color: "green", icon: "RxTarget", title: "Knowledge Capture", description: "Every resolution builds your knowledge base, making the entire team smarter over time." }
     ]
   },
   keyFeatures: {
-    title: "SupportX Core Capabilities",
+    title: "Key Features & Capabilities",
+    description: "Enterprise-grade tools designed to streamline support operations, ensure SLA compliance and empower teams to deliver exceptional service.",
     row1: {
       card1: {
-        icon: "FaRegChartBar",
-        title: "Seamless Multi‑Region Support",
-        description: "Follow‑the‑sun support across time zones and languages with cultural adaptation and regulatory compliance.",
-        features: ["Time zone sync", "Language translation", "Cultural adaptation", "Regulatory compliance"]
+        icon: <PiBrainThin />,
+        title: "Automated Ticket Routing",
+        description: "Uses AI to assign tickets to the right experts instantly, eliminating delays and manual guesswork. With NLP and machine learning, it ensures smart routing, balanced workloads, timely escalations and seamless integration with your existing ticketing systems.",
+        features: ["Smart routing", "Timely escalations", "Balanced workloads", "ITSM integration"]
       },
       image: "../assets/supportx/key-features-supportx.png",
       card2: {
-        icon: "CiFileOn",
-        title: "Integration Ecosystem",
-        description: "Pre‑built integrations with ITSM platforms, communication tools, and monitoring systems. API support for custom needs.",
-        features: ["ITSM integrations", "Communication tools", "Monitoring systems", "API & Webhooks"]
+        icon: <FiAlertTriangle />,
+        title: "Intelligent SLA Tracking & Escalation",
+        description: "Ensures consistent compliance by automatically monitoring SLAs and escalating issues before they breach. With predictive alerts, smart scheduling and real-time tracking, nothing slips through the cracks, building trust and preventing escalations.",
+        features: ["Predictive alerts", "Real-time tracking", "Smart scheduling", "Automated escalation"]
       }
     },
     row2: [
       {
-        icon: "TbHierarchy",
-        title: "User Experience & Interface",
-        description: "Unified dashboard for teams, collaborative tools, and mobile access. End users allow multi‑channel ticket creation and self‑service.",
-        features: ["Unified dashboard", "Collaboration tools", "Mobile access", "Self-service portals"]
+        icon: <CiGlobe />,
+        title: "Seamless Multi-Region IT Service Management",
+        description: "Delivers consistent, high-quality support across time zones and languages with follow-the-sun coverage, automated regional handoffs and localised compliance. It adapts to cultural nuances, business hours and reporting needs worldwide.",
+        features: ["Follow-the-sun", "Localised compliance", "Regional handoffs", "Cultural adaptation"]
       },
       {
-        icon: "PiBrainThin",
-        title: "Security & Compliance",
-        description: "AES‑256 encryption, role‑based access, audit logging, and compliance with SOC 2 Type II, ISO 27001 and GDPR.",
-        features: ["AES-256 encryption", "RBAC", "Audit logging", "Compliance ready"]
+        icon: <FaRegChartBar />,
+        title: "Advanced Analytics & Performance Optimisation",
+        description: "Delivers real-time insights into support operations, enabling data-driven decisions for continuous improvement. With trend analysis, satisfaction tracking and predictive planning, it helps optimise team performance and resource allocation.",
+        features: ["Trend analysis", "Predictive planning", "Satisfaction tracking", "Resource optimisation"]
       },
       {
-        icon: "RxTarget",
-        title: "ROI & Business Impact",
-        description: "Reduce response times, decrease ticket backlogs, improve resolution rates and enhance user satisfaction.",
-        features: ["Faster response", "Reduced backlog", "Higher resolution", "Enhanced satisfaction"]
+        icon: <RxTarget />,
+        title: "AI-Powered Knowledge Management",
+        description: "Automatically builds and maintains a dynamic knowledge base from resolved tickets, making expertise accessible across the organisation. With smart search, self-service suggestions and continuous updates, it drives faster resolution and empowers users.",
+        features: ["Smart search", "Continuous updates", "Self-service", "Knowledge capture"]
       }
     ]
   },
   industrySpecs: {
-    title: "Support Industry",
-    highlight: "Verticals",
+    title: "Industry-Specific Applications",
+    highlight: "",
+    description: "Purpose-built support solutions tailored to the unique compliance, workflow and operational demands of your industry.",
     tabs: [
       { 
-        id: 'saas', 
-        label: 'SaaS Platforms', 
-        icon: <VscTypeHierarchySub />,
-        title: 'B2B SaaS Support',
-        description: 'Designed for high-growth software companies managing complex user bases and API integrations.',
+        id: 'healthcare', 
+        label: 'Healthcare IT', 
+        icon: <FaUserDoctor />,
+        title: 'Healthcare IT Support',
+        description: 'Managing IT in healthcare requires understanding that technology directly impacts patient care, with zero tolerance for extended downtime.',
         features: [
-          'Direct integration with dev task managers (Jira/GitHub)',
-          'Feature request aggregation from support tickets',
-          'Trial-to-Paid conversion support triggers',
-          'Multi-tenant account health dashboards'
+          'HIPAA-compliant ticket handling and audit trails',
+          'Integration with healthcare-specific systems (EMR, PACS, pharmacy)',
+          'Emergency escalation procedures for life-critical systems',
+          'Medical device support prioritisation and routing',
+          'Regulatory compliance reporting and documentation',
+          '24/7 support coverage for round-the-clock patient care'
         ]
       },
       { 
-        id: 'ecommerce', 
-        label: 'E-commerce', 
+        id: 'financial', 
+        label: 'Financial Services', 
         icon: <FaFile />,
-        title: 'Retail & E-commerce',
-        description: 'Scalable support for high-volume consumer interactions and order logistics.',
+        title: 'Financial Services Support',
+        description: 'Financial institutions demand secure, auditable and rapid IT support to protect sensitive data, ensure uptime and meet strict regulatory requirements.',
         features: [
-          'Order tracking and refund automation',
-          'Peak season surge management',
-          'Social commerce message integration',
-          'Post-purchase feedback automation'
+          'SOC 2 and PCI-DSS compliant ticket management',
+          'Priority routing for trading systems and core banking platforms',
+          'Real-time SLA tracking for regulatory reporting',
+          'Encrypted communications and full audit logging',
+          'Multi-region support for global financial operations',
+          'Fraud and security incident escalation workflows'
         ]
       },
-      // { 
-      //   id: 'fintech', 
-      //   label: 'Fintech', 
-      //   icon: <FaUserDoctor />,
-      //   title: 'Financial Tech',
-      //   description: 'Compliance-first support for regulated financial services and digital banking.',
-      //   features: [
-      //     'Verified identity support channels',
-      //     'Secure document exchange and review',
-      //     'Regulatory reporting export tools',
-      //     'Fraud alert escalation workflows'
-      //   ]
-      // },
       { 
-        id: 'managed', 
-        label: 'Managed Services', 
+        id: 'manufacturing', 
+        label: 'Manufacturing', 
         icon: <TbAlignBoxCenterStretch />,
-        title: 'MSPs & Outsourcing',
-        description: 'Efficiency tools for teams supporting multiple third-party clients and SLAs.',
+        title: 'Manufacturing IT Support',
+        description: 'Manufacturing environments require responsive support to minimise production downtime, maintain operational continuity and manage complex OT/IT integrations.',
         features: [
-          'Client-specific branding and portals',
-          'Billable time tracking and export',
-          'Standardized global workflows',
-          'Internal agent bench-strength metrics'
+          'Priority escalation for production-critical systems',
+          'Integration with MES, ERP and SCADA platforms',
+          'Shift-based SLA management and 24/7 coverage',
+          'Asset tracking and equipment lifecycle support',
+          'Downtime impact reporting and root cause analysis',
+          'Predictive maintenance ticket automation'
         ]
       }
     ]
@@ -196,41 +194,45 @@ export const supportxContent = {
     }
   },
   implementationTraining: {
-    title: "Implementation & Training",
-    description: "Our Proven implementation methodology ensures quick time to value with minimal disruption",
+    title: { prefix: "Implementation &", highlight: "Training" },
+    description: "Our proven implementation methodology ensures quick time to value with minimal disruption.",
     phases: [
       { 
         title: "Assessment & Planning", 
         icon: "wrench",
         iconBg: "bg-blue-600",
+        description: "We start by understanding your current environment, requirements and success criteria.",
         points: ["Current state analysis and requirement gathering", "Integration planning and technical architecture review", "User training plan development", "Success criteria definition and measurement planning"]
       },
       { 
         title: "Configuration & Integration", 
-        icon: "chat",
+        icon: "bolt",
         iconBg: "bg-purple-600",
-        points: ["SupportX configuration and customization", "Integration with existing systems and workflows", "Data migration from legacy systems", "User acceptance testing and feedback incorporation"]
+        description: "We configure SupportX to match your workflows and integrate with your existing tech stack.",
+        points: ["SupportX configuration and customisation", "Integration with existing systems and workflows", "Data migration from legacy systems", "User acceptance testing and feedback incorporation"]
       },
       { 
         title: "Training & Go-Live", 
         icon: "stats",
         iconBg: "bg-cyan-500",
-        points: ["Comprehensive user training for all roles", "Go-live support with dedicated success manager", "Performance monitoring and optimization", "Post-implementation review and optimization planning"]
+        description: "We prepare your teams for success and ensure a smooth transition to production.",
+        points: ["Comprehensive user training for all roles", "Go-live support with dedicated success manager", "Performance monitoring and optimisation", "Post-implementation review and optimisation planning"]
       }
     ],
     ongoing: {
       title: "Ongoing Support & Success",
+      subtitle: "Your success doesn't end at go-live, we're with you every step of the way.",
       items: [
         { icon: "users", text: "Dedicated customer success manager" },
-        { icon: "search", text: "Regular health checks and optimization reviews" },
+        { icon: "search", text: "Regular health checks and optimisation reviews" },
         { icon: "stack", text: "Feature adoption guidance and best practice sharing" },
         { icon: "bolt", text: "24/7 technical support with guaranteed response times" }
       ]
     }
   },
   deploymentOptions: {
-    title: "Deployment Options",
-    description: "SaaS, private cloud or on‑premises, each with appropriate infrastructure control and support models.",
+    title: { prefix: "Deployment", highlight: "Options" },
+    description: "Cloud-first architecture designed for modern environments while supporting traditional deployment models.",
     options: [
       {
         id: "saas",
@@ -259,149 +261,119 @@ export const supportxContent = {
     ]
   },
   securityCompliance: {
-    title: "Security & Compliance",
-    description: "Enterprise-grade security and compliance standards to protect your data and meet regulatory requirements",
+    title: { prefix: "Security &", highlight: "Compliance" },
+    description: "Enterprise-grade security and compliance standards to protect your data and meet regulatory requirements.",
     security: {
       title: "Enterprise-Grade Security",
       items: [
-        { title: "Data Encryption", description: "AES-256 encryption for all data at rest and in transit" },
-        { title: "Access Control", description: "Role-based access with multi-factor authentication" },
-        { title: "Audit Logging", description: "Comprehensive audit trails for all system activities" },
-        { title: "Network Security", description: "VPN and private connectivity options" }
+        { title: "Data Encryption", description: "AES-256 encryption for all data at rest and in transit." },
+        { title: "Access Control", description: "Role-based access with multi-factor authentication." },
+        { title: "Audit Logging", description: "Comprehensive audit trails for all system activities." },
+        { title: "Network Security", description: "VPN and private connectivity options." }
       ]
     },
     privacy: {
       title: "Data Privacy & Protection",
       items: [
-        { title: "Data Residency", description: "Choose where your data is stored and processed" },
-        { title: "Privacy Controls", description: "Granular privacy settings and data retention policies" },
-        { title: "Right to Deletion", description: "Complete data removal capabilities" },
-        { title: "Anonymization", description: "Automatic PII removal for analytics and reporting" },
-        { title: "Consent Management", description: "User consent tracking and management" }
+        { title: "Data Residency", description: "Choose where your data is stored and processed." },
+        { title: "Privacy Controls", description: "Granular privacy settings and data retention policies." },
+        { title: "Right to Deletion", description: "Complete data removal capabilities on request." },
+        { title: "Anonymisation", description: "Automatic PII removal for analytics and reporting." },
+        { title: "Consent Management", description: "User consent tracking and management." }
       ]
     },
     compliance: {
       title: "Compliance Standards",
+      description: "Certified to meet the highest industry standards for security and data protection.",
       items: ["SOC Type II", "ISO 27001", "GDPR", "HIPAA"]
     }
   },
   integrationEcosystem: {
-    title: "Integration Ecosystem",
-    description: "Seamlessly connect with your existing tools and workflows through our comprehensive integration platform",
+   
+    title:{prefix:"Integration", highlight:"Ecosystem"},
+    description: "Seamlessly connect with your existing tools and workflows through our comprehensive integration platform.",
     categories: [
       {
         id: "itsm",
         title: "ITSM Platform Integration",
-        items: ["ServiceNow (certified integration partner)", "Jira Service Management", "BMC Remedy", "Freshservice", "Microsoft System Center"]
+        items: ["ServiceNow (certified integration partner)", "Jira Service Management", "BMC Remedy", "Freshservice", "Microsoft System Center", "Zendesk"]
       },
       {
         id: "communication",
         title: "Communication Platform Integration",
-        items: ["Microsoft Teams", "Slack", "Zoom", "WebEx", "PagerDuty"]
+        items: ["Microsoft Teams", "Slack", "Zoom", "WebEx", "PagerDuty", "Google Chat"]
       },
       {
         id: "monitoring",
         title: "Monitoring & Infrastructure Integration",
-        items: ["Native integration with MonetX for proactive issue detection", "SIEM system integration for security incident management", "Network monitoring tool integration for automatic ticket creation", "Application performance monitoring integration"]
+        items: ["Native integration with MonetX for proactive issue detection", "SIEM system integration for security incident management", "Network monitoring tool integration for automatic ticket creation", "Application performance monitoring integration", "Cloud infrastructure monitoring (AWS, Azure, GCP)", "Log management platform connectivity"]
       }
     ]
   },
   roiImpact: {
-    title: "ROI & Business Impact",
-    description: "SupportX helps organisations reduce response times, decrease ticket backlogs, improve resolution rates and enhance user satisfaction.",
+    title: { prefix: "ROI & Business", highlight: "Impact" },
+    description: "Measurable results that demonstrate real value, from faster response times to reduced ticket volumes and improved satisfaction.",
     cards: [
-      { icon: "clock", title: "Response Reduction", color: "green" },
-      { icon: "check", title: "Resolution Rates", color: "blue" },
-      { icon: "down", title: "Ticket Backlogs", color: "purple" },
-      { icon: "thumbs", title: "User Satisfaction", color: "yellow" },
-      { icon: "up", title: "Efficiency Boost", color: "cyan" }
+      { icon: "clock", title: "Response Reduction", value: "60%", description: "Average reduction in first response time.", color: "green" },
+      { icon: "check", title: "Resolution Improvement", value: "45%", description: "Increase in first-contact resolution rate.", color: "blue" },
+      { icon: "down", title: "Handling Decrease", value: "35%", description: "Reduction in average ticket handling time.", color: "purple" },
+      { icon: "thumbs", title: "Ticket Reduction", value: "40%", description: "Fewer tickets through self-service and automation.", color: "yellow" },
+      { icon: "up", title: "Satisfaction Increase", value: "50%", description: "Improvement in customer satisfaction scores.", color: "cyan" }
     ]
   },
   userExperience: {
-    title: "User Experience",
-    subtitle: "Interface",
+    title: { prefix: "User Experience &", highlight: "Interface" },
+   
+    description: "Intuitive interfaces tailored for every role, empowering end users, support teams and managers to work smarter.",
     columns: [
       {
         icon: <FaUsers />,
         title: "For End Users",
         items: [
-            { title: "Multi-channel Ticket Creation", description: "Email, portal, mobile app, phone, and chat support." },
-            { title: "Self-Service Portals", description: "Searchable knowledge base with common solutions." },
-            { title: "Real-Time Updates", description: "Automatic notifications about ticket progress." },
+            { title: "Simple Ticket Creation", description: "Multiple channels (email, web portal, mobile app, phone) for effortless request submission." },
+            { title: "Self-Service Portal", description: "Searchable knowledge base with common solutions to resolve issues instantly." },
+            { title: "Real-Time Updates", description: "Automatic notifications about ticket progress and status changes." },
             { title: "Mobile Access", description: "Full functionality available on smartphones and tablets." },
-            { title: "Feedback Integration", description: "Easy satisfaction rating and improvement suggestions." }
+            { title: "Feedback Integration", description: "Easy satisfaction rating and improvement suggestions after resolution." }
         ]
       },
       {
         icon: <FaHeadphones />,
         title: "For Support Teams",
         items: [
-            { title: "Unified Dashboard", description: "All assigned tickets with priority and SLA information." },
-            { title: "Collaborative Tools", description: "Built-in chat, screen sharing, and knowledge sharing." },
-            { title: "Mobile App", description: "Handle urgent tickets from anywhere." },
-            { title: "Performance Metrics", description: "Individual and team performance tracking." },
-            { title: "Continuous Learning", description: "Suggested training based on ticket patterns." }
+            { title: "Unified Dashboard", description: "All assigned tickets with priority and SLA information in one view." },
+            { title: "Collaboration Tools", description: "Built-in chat, screen sharing and knowledge sharing for team coordination." },
+            { title: "Mobile App", description: "Handle urgent tickets from anywhere, anytime." },
+            { title: "Performance Metrics", description: "Individual and team performance tracking with real-time insights." },
+            { title: "Continuous Learning", description: "Suggested training based on ticket patterns and resolution history." }
         ]
       },
       {
         icon: <FaCog />,
         title: "For Managers",
         items: [
-           { title: "Executive Dashboards", description: "High-level KPIs, trend analysis, and predictive planning." },
-           { title: "Resource Planning", description: "Workload distribution and capacity planning." },
-           { title: "Quality Monitoring", description: "Ticket quality auditing and coaching opportunities." },
-           { title: "Budget Planning", description: "Cost per ticket and ROI analysis." },
-           { title: "Compliance Reporting", description: "Automated compliance and audit reporting." }
-        ]
-      }
-    ]
-  },
-  pricing: {
-    title: "Tailored Support Plans",
-    description: "Scale your customer success operations with pricing that grows as you do.",
-    cards: [
-      {
-        title: "Growth Support",
-        features: [
-          "Up to 20 full-time agents",
-          "Standard AI routing core",
-          "Business hours email & chat",
-          "Standard reporting dashboard"
-        ]
-      },
-      {
-        title: "Enterprise Success",
-        features: [
-          "Unlimited agent seats",
-          "Advanced NLP & Sentiment hub",
-          "24/7 Global coverage",
-          "Custom integration engineering"
-        ]
-      },
-      {
-        title: "Managed Resolution",
-        features: [
-          "Our experts run your desk",
-          "Guaranteed SLA results",
-          "Weekly strategy reviews",
-          "Full CX transformation audit"
+           { title: "Executive Dashboards", description: "High-level KPIs and trend analysis for strategic decision-making." },
+           { title: "Resource Planning", description: "Workload distribution and capacity planning across teams." },
+           { title: "Quality Monitoring", description: "Ticket quality auditing and coaching opportunities for team improvement." },
+           { title: "Budget Planning", description: "Cost per ticket and ROI analysis for financial oversight." },
+           { title: "Compliance Reporting", description: "Automated compliance and audit reporting for regulatory requirements." }
         ]
       }
     ]
   },
   gettingStarted: {
-    title: { prefix: "Go", highlight: "Live" },
-    description: "Deployment Journey",
+    title: { prefix: "Getting", highlight: "Started" },
+    description: "Evaluation Options",
     steps: [
-      { title: "Infrastructure Audit", points: ["Tooling inventory and data audit", "KPI and SLA benchmarking", "System security review"] },
-      { title: "AI Training & Config", points: ["Historical data labeling", "Intent model training", "Workflow pathing setup"] },
-      { title: "Agent Rollout", points: ["Tier-1 team onboarding", "Side-by-side verification", "Full production cutover"] }
+      { title: "Discovery & Planning", points: ["Free Trial: 30-day full-featured trial with up to 50 users", "Pilot Program: 90-day pilot with dedicated success manager", "Proof of Concept: Custom POC based on your use cases"] },
+      { title: "Implementation & Configuration", points: ["Success criteria definition", "Dedicated setup & configuration", "Custom demo scheduling"] },
+      { title: "Evaluation & Optimisation", points: ["Hands-on evaluation with your team", "Performance measurement & ROI analysis", "Continuous feedback integration"] }
     ]
   },
   cta: {
-    title: "Ready to Transform Your Projects?",
-    description: "Join leading organizations using SupportX to deliver projects on time and within budget",
-    buttonText: "Start a free trial",
-    secondaryButtonText: "Talk to our sales team"
+    title: "Ready to Transform Your Support?",
+    description: "Join leading organisations using SupportX to deliver exceptional service, meet SLAs and drive customer satisfaction.",
+    buttonText: "Start Your Free Trial",
+    secondaryButtonText: "Schedule a Custom Demo"
   }
 };

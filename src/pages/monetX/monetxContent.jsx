@@ -20,8 +20,8 @@ export const monetxContent = {
         </span>
       </>
     ),
-    description: "MonetX provides real‑time performance monitoring, unified infrastructure insights and AI‑driven analytics. Discover an observability platform that transforms your IT operations.",
-    buttonText: "Start Your Free Trial",
+    description: "Unify visibility, automate operations, and optimize performance across hybrid, multi-cloud, and on-premise networks with AI-driven intelligence.",
+    buttonText: "Let’s Begin",
     secondaryButtonText: "Schedule a Custom Demo",
     backgroundImage: "../assets/montex/hero-bg.png",
     heroImage: "../assets/montex/hero-img.png",
@@ -31,79 +31,80 @@ export const monetxContent = {
     // ]
   },
   modernNetworks: {
-    title: "Challenges We Solve",
-    description: "Modern networks span multiple clouds, on‑premises infrastructure and hybrid environments. Manual processes create vendor chaos, alert fatigue, resource drain and limited visibility. Without intelligent monitoring, problems may be discovered only after they impact users.",
+    title: "Modern Networks Are More Complex Than Ever",
+    description: "Modern networks span multiple clouds, on-premises infrastructure, and hybrid environments. Manual processes create vendor chaos, alert fatigue, resource drain, and limited visibility. Without intelligent monitoring, issues are often discovered only after they impact users, business operations, and service quality.",
     cards: [
-      { icon: "FaNetworkWired", title: "Vendor Chaos", description: "Managing equipment from multiple vendors with different interfaces." },
-      { icon: "FiAlertTriangle", title: "Alert Fatigue", description: "Too many false alarms drowning out real issues." },
-      { icon: "LuUsersRound", title: "Resource Drain", description: "Manual processes consuming valuable engineering time." },
-      { icon: "IoMdCloudOutline", title: "Limited Visibility", description: "Gaps in monitoring across hybrid environments." },
-      { icon: "HiOutlineBolt", title: "Reactive Operations", description: "Finding out about problems after users complain." }
-    ]
+      { icon: "FaNetworkWired", title: "Vendor & Tool Sprawl", description: "Too many disconnected tools across multiple vendors create visibility gaps, slow troubleshooting, and increase operational overhead." },
+      { icon: "FiAlertTriangle", title: "Alert Fatigue", description: "Too many false alerts overwhelm teams and slow down incident response." },
+      { icon: "HiOutlineBolt", title: "Manual & Reactive Operations", description: "Reliance on manual monitoring and reactive firefighting leads to delayed incident response, prolonged downtime, and higher business risk." },
+      // { icon: "LuUsersRound", title: "Resource Drain", description: "Manual processes consuming valuable engineering time." },
+      // { icon: "IoMdCloudOutline", title: "Limited Visibility", description: "Gaps in monitoring across hybrid environments." },
+       ]
   },
   commandCenter: {
-    title: { prefix: "How MonetX", highlight: "Works", suffix: "" },
+    title: { prefix: "Your Network Intelligence ", highlight: "Command Center", suffix: "" },
+    description:'MonetX acts as a centralized command center for your entire digital infrastructure, transforming raw network data into real-time intelligence. It brings together discovery, monitoring, analytics, and automation into a single unified view, enabling faster decisions, proactive operations, and complete visibility across your hybrid, multi-cloud, and on-prem environments.',
     steps: [
-      { color: "blue", icon: "TbHierarchy3", title: "Universal Discovery", description: "MonetX automatically scans and maps your entire network across vendors, clouds and environments, cataloguing everything for continuous monitoring." },
-      { color: "purple", icon: "PiBrainThin", title: "Intelligent Analysis", description: "The AI engine contextualises metrics, detects patterns, predicts potential issues and recommends optimisations." },
-      { color: "yellow", icon: "HiOutlineBolt", title: "Automated Response", description: "When issues arise, MonetX executes predetermined remediation procedures and notifies the right teams, shifting from reactive firefighting to proactive optimisation." },
-      { color: "green", icon: "RxTarget", title: "Continuous Learning", description: "The system evolves over time, learning from each incident to become a smarter partner that understands your environment better than anyone else." }
+      { color: "blue", icon: "TbHierarchy3", title: "Universal Discovery", description: "MonetX automatically scans and maps your entire network across vendors, clouds, and environments cataloguing everything for continuous, real-time monitoring." },
+      { color: "purple", icon: "PiBrainThin", title: "Intelligent Analysis", description: "The AI engine contextualizes metrics, detects patterns, predicts potential issues, and recommends performance optimizations before failures occur." },
+      { color: "yellow", icon: "HiOutlineBolt", title: "Predictive Performance Intelligence", description: "MonetX continuously analyzes performance patterns to predict capacity risks, performance degradation, and potential outages, allowing teams to act before issues impact users." },
+      { color: "green", icon: "RxTarget", title: "Unified Topology & Dependency Mapping", description:"Gain real-time visibility into how devices, applications, and services are interconnected with dynamic topology and dependency maps that accelerate root-cause analysis." }
     ]
   },
   keyFeatures: {
-    title: "Key Features & Capabilities",
+    title: "Key Features",
+    description: "Enterprise-grade visibility, intelligent automation and seamless integration, designed to simplify operations and enable data-driven decisions at scale.",
     row1: {
       card1: {
         icon: "FaRegChartBar",
-        title: "Real‑Time Metrics & Monitoring",
-        description: "Sub‑second visibility into the health and performance of your infrastructure, with intelligent alerting and predictive forecasting. Supports standard and custom protocols.",
-        features: ["Sub-second monitoring", "Custom protocols", "Anomalous forecasting", "Intelligent alerting"]
+        title: "Real-Time Metrics & Monitoring",
+        description: "Live performance tracking with sub-second polling accuracy, dynamic alert thresholds based on real usage patterns, and predictive forecasting for capacity and performance risks. Supports standard protocols (SNMP, ICMP, API) and custom integrations.",
+        features: ["Sub-second polling accuracy", "Dynamic alert thresholds", "Predictive forecasting", "Standard & custom protocols"]
       },
       image: "../assets/montex/key-features.png",
       card2: {
+        icon: "TbHierarchy",
+        title: "Unified Infrastructure Insights",
+        description: "Single-pane-of-glass visibility across multi-vendor environments with automated topology discovery, real-time link mapping, cross-platform correlation, and a unified alerting engine to eliminate duplicate and noisy alerts.",
+        features: ["Single-pane-of-glass visibility", "Automated topology discovery", "Cross-platform correlation", "Unified alerting engine"]
+      }
+    },
+    row2: [
+      {
+        icon: "PiBrainThin",
+        title: "AI-Driven Reporting & Analytics",
+        description: "Automated anomaly detection utilizing machine learning, instant executive and technical trend reports, predictive planning dashboards for performance and capacity, and root-cause intelligence powered by behavioral pattern recognition.",
+        features: ["Automated anomaly detection", "Trend analysis reports", "Predictive planning dashboards", "Root-cause intelligence"]
+      },
+      {
+        icon: "RxTarget",
+        title: "Advanced Customization Engine",
+        description: "Fully customizable dashboards for NOC, SOC, and leadership with rule-based alert customization by device, service, or location. Includes a workflow automation builder and Role-based access control (RBAC).",
+        features: ["Fully customizable dashboards", "Rule-based alert customization", "Workflow automation builder", "Role-based access control"]
+      },
+      {
         icon: "CiFileOn",
         title: "Seamless Integration Platform",
         description: "Connect MonetX with existing tools via robust APIs, ITSM support and real‑time notifications.",
         features: ["API support", "Webhook support", "ITSM integration", "Real-time notifications"]
       }
-    },
-    row2: [
-      {
-        icon: "TbHierarchy",
-        title: "Unified Infrastructure Insights",
-        description: "Vendor‑agnostic visibility into all network devices, unified alerts, topology discovery and cross‑platform correlation.",
-        features: ["Vendor-agnostic", "Unified alerting", "Topology discovery", "Cross-platform correlation"]
-      },
-      {
-        icon: "PiBrainThin",
-        title: "AI‑Driven Reporting & Analytics",
-        description: "Machine‑learning algorithms transform raw data into actionable insights; anomaly detection, automated reporting and predictive planning are built in.",
-        features: ["Anomaly detection", "Automated reporting", "Predictive planning", "BI integration"]
-      },
-      {
-        icon: "RxTarget",
-        title: "Advanced Customisation Engine",
-        description: "Tailor dashboards, alerts and workflow automation to your unique environment.",
-        features: ["Custom dashboards", "Role-based access", "Flexible alerting", "Workflow automation"]
-      }
     ]
   },
   industrySpecs: {
-    title: "Industry Applications",
-    highlight: "Sectors",
+    title: "Industry Specific",
+    highlight: "", // Using empty highlight as user provided a single string title, or I can split "Industry" and "Specific"
+    description: "MonetX adapts seamlessly across industries like telecom, finance, healthcare and enterprise data centres, delivering tailored observability, compliance and scalable performance for every deployment.",
     tabs: [
       { 
         id: 'telecoms', 
-        label: 'Telecoms & ISPs', 
+        label: 'Telecommunications & ISPs', 
         icon: <VscTypeHierarchySub />,
         title: 'Telecommunications & ISPs',
-        description: 'MonetX supports service provider network management, addressing the complexities of managing subscriber networks and meeting SLAs.',
+        description: 'Unified service provider network monitoring, traffic visibility, performance optimization, and fault automation.',
         features: [
-          'Real-time monitoring and troubleshooting of subscriber endpoints',
-          'Network capacity planning and performance optimization.',
-          'Prioritization of issues based on revenue impact.',
-          'SLA reporting and service quality metrics.',
-          'Multi-tenant isolation for secure, segmented monitoring.'
+          'Monitor core, access, and aggregation networks in real time to ensure high availability and reduce service outages.',
+          'Instantly detect fiber cuts, device failures, and traffic congestion with AI-driven root-cause analysis and auto-remediation.',
+          'Predict traffic growth trends and optimize network expansion without service disruption.'
         ]
       },
       { 
@@ -111,38 +112,35 @@ export const monetxContent = {
         label: 'Financial Services', 
         icon: <FaFile />,
         title: 'Financial Services',
-        description: 'Secure, high-performance monitoring for mission-critical financial infrastructure with SLA reporting and quality metrics.',
+        description: 'SLA reporting, high-availability infrastructure monitoring, regulatory compliance, and secure performance analytics.',
         features: [
-          'Ultra-low latency network monitoring',
-          'Audit trails and compliance reporting',
-          'Fraud detection pattern analysis',
-          'Secure multi-site connectivity mapping'
+          'Ensure 24/7 availability of transaction systems, databases, and middleware platforms.',
+          'Monitor ATM networks, mobile banking apps, and online portals to maintain seamless customer experiences.',
+          'Generate automated SLA and regulatory compliance reports for internal audits and regulatory authorities.'
         ]
       },
       { 
         id: 'healthcare', 
         label: 'Healthcare', 
         icon: <FaUserDoctor />,
-        title: 'Healthcare Systems',
-        description: 'Ensuring 100% uptime for life-critical healthcare systems and IoT devices with asset monitoring and regulatory compliance.',
+        title: 'Healthcare',
+        description: 'Critical asset monitoring, medical device visibility, regulatory compliance, and secure network segmentation.',
         features: [
-          'Biomedical device connectivity monitoring',
-          'HIPAA compliance ready auditing',
-          'Emergency response network prioritization',
-          'Secure guest and staff network isolation'
+          'Monitor imaging systems, patient monitors, and connected medical devices for continuous uptime.',
+          'Ensure separate, protected network zones for ICUs, labs, administrative systems, and public services.',
+          'Maintain continuous compliance with healthcare security and data protection regulations.',
         ]
       },
       { 
         id: 'enterprise', 
-        label: 'Enterprise DC', 
+        label: 'Enterprise Data Centers', 
         icon: <TbAlignBoxCenterStretch />,
         title: 'Enterprise Data Centers',
-        description: 'Unified management for complex hybrid-cloud and on-premise data center environments.',
+        description: 'Full infrastructure visibility, capacity optimization, and performance forecasting across large-scale environments.',
         features: [
-          'Software-defined network (SDN) visibility',
-          'Power and cooling metrics integration',
-          'Zero-trust network architecture mapping',
-          'Automated disaster recovery pathing'
+          'Monitor servers, storage, network devices, and virtual environments from a single unified dashboard.',
+          'Forecast CPU, memory, storage, and network utilization to prevent performance bottlenecks.',
+          'Detect early warning signs of failures and trigger automated recovery workflows.'
         ]
       }
     ]
@@ -225,18 +223,18 @@ export const monetxContent = {
     ]
   },
   gettingStarted: {
-    title: { prefix: "Implementation &", highlight: "Onboarding" },
-    description: "Extravis guides you from Discovery & Planning, through Implementation & Configuration to Evaluation & Optimisation, ensuring a smooth transition with minimal disruption and measurable ROI.",
+    title: { prefix: "Getting", highlight: "Started" },
+    description: "", // No explicit description provided in user prompt for this section, aside from the steps. Keeping empty or defaulting if preferred. User didn't provide a description, so I will remove the old one.
     steps: [
-      { title: "Discovery & Planning", points: ["Network assessment and requirement gathering", "POC scope definition and success criteria", "Installation process and preparation"] },
-      { title: "Implementation & Configuration", points: ["MonetX installation and initial configuration", "Device discovery and integration setup", "Custom dashboard and alert configuration"] },
-      { title: "Evaluation & Optimisation", points: ["User training and hands-on evaluation", "Performance tuning and optimization", "Business case development and ROI analysis"] }
+      { title: "Discovery & Planning", points: ["Network assessment, requirement gathering, and solution alignment."] },
+      { title: "Implementation & Configuration", points: ["Network onboarding, rule configuration, device discovery, and system integration."] },
+      { title: "Ongoing Optimization", points: ["Continuous tuning, user training, and workflow refinement for maximum ROI."] }
     ]
   },
   cta: {
-    title: "Ready to monitor smarter?",
-    description: "Get started today and experience the power of intelligent network automation",
-    buttonText: "Start your free trial",
-    secondaryButtonText: "Schedule a demo"
+    title: "Ready to Transform Your Network Management?",
+    description: "Get started with MonetX today and experience the power of unified network monitoring, automation, and AI-driven insights.",
+    buttonText: "Free Trial",
+    secondaryButtonText: "Schedule a Demo"
   }
 };

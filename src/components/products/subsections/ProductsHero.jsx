@@ -40,12 +40,11 @@ const ProductsHero = () => {
           className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6"
           data-aos="fade-up"
         >
-          World-Class <br />
+         
+          Extravis Solutions <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">
-            Automation, Observability,
+            MonetX & SupportX Platform Comparison
           </span>
-          <br />
-          and IT Service Solutions
         </h1>
 
         {/* Subtext - Fades up with 200ms delay */}
@@ -54,9 +53,7 @@ const ProductsHero = () => {
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          Four powerful platforms designed to transform every aspect of your IT
-          operations. Each solution works independently or as part of an
-          integrated ecosystem that grows with your business.
+          Compare Extravis’s integrated platforms, network observability (MonetX) and service management (SupportX). Discover which solution fits your needs.
         </p>
 
         {/* CTA Button - Zooms in with 400ms delay */}

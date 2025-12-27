@@ -25,18 +25,18 @@ const CTASection = ({
           {/* Primary Button */}
           <button 
             onClick={onClick}
-            className="group px-8 py-3 bg-[#4F46E5] hover:bg-[#4338ca] text-white rounded-full font-medium transition-all transform hover:scale-105 shadow-lg flex items-center gap-2"
+            className="group min-w-[240px] px-8 py-3 justify-center bg-[#4F46E5] hover:bg-[#4338ca] text-white rounded-full font-medium transition-all transform hover:scale-105 shadow-lg flex items-center gap-2"
           >
-            {buttonText} <span className="text-lg">→</span>
+            {buttonText} {/* <span className="text-lg">→</span> */}
           </button>
 
           {/* Secondary Button */}
           {secondaryButtonText && (
             <button 
               onClick={onSecondaryClick}
-              className="px-8 py-3 bg-white/20 hover:bg-white/30 border border-white/40 text-white rounded-full font-medium transition-all transform hover:scale-105 backdrop-blur-sm flex items-center gap-2"
+              className="min-w-[240px] px-8 py-3 justify-center bg-white/20 hover:bg-white/30 border border-white/40 text-white rounded-full font-medium transition-all transform hover:scale-105 backdrop-blur-sm flex items-center gap-2"
             >
-              {secondaryButtonText} <span className="text-lg">→</span>
+              {secondaryButtonText} {/* <span className="text-lg">→</span> */}
             </button>
           )}
         </div>

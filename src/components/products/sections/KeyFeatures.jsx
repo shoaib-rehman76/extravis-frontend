@@ -10,7 +10,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const KeyFeatures = ({ title, row1, row2 }) => {
+const KeyFeatures = ({ title, description, row1, row2 }) => {
   const iconMap = {
     FaRegChartBar: <FaRegChartBar />,
     CiFileOn: <CiFileOn />,
@@ -45,7 +45,7 @@ const KeyFeatures = ({ title, row1, row2 }) => {
 
   return (
     <section className="py-10 lg:py-20 border-t border-gray-800">
-      <SectionHeader title={title} />
+      <SectionHeader title={title} description={description} />
 
       <Wrapper>
         <div className="max-w-7xl mx-auto space-y-6">

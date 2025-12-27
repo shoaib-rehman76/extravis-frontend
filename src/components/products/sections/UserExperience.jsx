@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { Wrapper } from '../../../Shared/Wrapper';
+import SectionHeader from '../common/SectionHeader';
 import { FaUserFriends, FaRegSmileBeam, FaUserTie, FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -24,7 +25,7 @@ const PrevArrow = ({ onClick }) => (
   </button>
 );
 
-const UserExperience = ({ title, columns }) => {
+const UserExperience = ({ title, description, columns }) => {
   const sliderRef = useRef(null);
   
   const iconMap = {
@@ -71,12 +72,9 @@ const UserExperience = ({ title, columns }) => {
 
   return (
     <section className="py-10 lg:py-20 border-t border-gray-800 bg-[#090A0C]">
+      <SectionHeader title={title} description={description} />
       <Wrapper>
-        <div className="max-w-7xl mx-auto">
-            <h2 className="text-[2rem] font-bold text-white mb-12 text-center" data-aos="fade-up">
-                {title}
-            </h2>
-
+        <div className="max-w-7xl mx-auto mt-12">
             {/* Mobile Slider */}
             <div className="lg:hidden px-4">
                 <Slider ref={sliderRef} {...sliderSettings}>
@@ -94,7 +92,7 @@ const UserExperience = ({ title, columns }) => {
             </div>
 
             {/* Desktop Grid */}
-            <div className="hidden lg:grid lg:grid-cols-3 gap-8 mt-12">
+            <div className="hidden lg:grid lg:grid-cols-3 gap-8">
                  {columns.map((col, index) => renderColumn(col, index))}
             </div>
         </div>

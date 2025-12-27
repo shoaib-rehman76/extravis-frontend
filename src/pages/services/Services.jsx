@@ -15,12 +15,13 @@ export const Services = () => {
             <div className="bg-black/80 w-full min-h-screen"> {/* Overlay to ensure text readability */}
                 <Hero />
                 <ServicePhilosophy />
-                <ServiceDeliveryModels />
+                
                 <CloudSecurity />
                 <NetworkAutomation />
                 <ServiceOfferings />
                 <AISolutions />
                 <WhyChooseUs />
+                <ServiceDeliveryModels />
                 <CTA />
             </div>
         </div>

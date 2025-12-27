@@ -8,6 +8,8 @@ import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { RiUserCommunityFill } from 'react-icons/ri';
+import { VscSymbolStructure } from 'react-icons/vsc';
 
 // Custom Arrow Components
 const NextArrow = ({ onClick }) => (
@@ -33,8 +35,8 @@ const IntegrationEcosystem = ({ title, description, categories }) => {
   
   const iconMap = {
     itsm: <LuWrench />,
-    communication: <BsChatDots />,
-    monitoring: <IoStatsChartOutline />
+    communication: <RiUserCommunityFill />,
+    monitoring: <VscSymbolStructure />
   };
 
   const sliderSettings = {

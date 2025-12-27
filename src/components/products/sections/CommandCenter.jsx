@@ -10,7 +10,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const CommandCenter = ({ title, steps }) => {
+const CommandCenter = ({ title,description, steps }) => {
   const iconMap = {
     TbHierarchy3: <TbHierarchy3 />,
     PiBrainThin: <PiBrainThin />,
@@ -51,7 +51,7 @@ const CommandCenter = ({ title, steps }) => {
 
   return (
     <section className="py-10 lg:py-20 border-t border-gray-800">
-      <SectionHeader title={title} />
+      <SectionHeader title={title}  description={description}/>
       
       <Wrapper>
         {/* Desktop Grid Layout */}

@@ -13,7 +13,7 @@ const ComparisonMatrix = () => {
     });
   }, []);
 
-  // Data specifically for this table (GreenX and MapX removed)
+  // Data specifically for this table
   const products = [
     {
       name: "MonetX",
@@ -22,28 +22,29 @@ const ComparisonMatrix = () => {
     },
     {
       name: "SupportX",
-      icon: <FaHeadset className="text-green-400" />,
-      color: "text-green-400",
+      icon: <FaHeadset className="text-purple-400" />,
+      color: "text-purple-400",
     },
+   
   ];
 
-  // Updated row values to match only MonetX and SupportX
+  // Updated row values to match MonetX, SupportX, and GreenX
   const rows = [
     {
       label: "Primary Focus",
-      values: ["Network Observability", "Service Management"],
+      values: ["Network Observability", "Service Management", ],
     },
     {
       label: "Key Users",
-      values: ["Network Engineers", "Support Agents"],
+      values: ["Network Engineers", "Support Agents", ],
     },
     {
       label: "Main Benefits",
-      values: ["Real-time Monitoring", "Faster Resolution"],
+      values: ["Real-time Monitoring", "Faster Resolution", ],
     },
     {
       label: "ROI Timeline",
-      values: ["3-6 months", "1-3 months"],
+      values: ["3-6 months", "1-3 months", ],
     },
   ];
 
@@ -72,7 +73,7 @@ const ComparisonMatrix = () => {
             </span>
           </h2>
           <p className="text-gray-400 mt-4 text-lg">
-            Compare our powerful platforms at a glance
+            Find the right solution for your business needs
           </p>
         </div>
 

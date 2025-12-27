@@ -11,10 +11,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const IndustrySpecs = ({ title, highlight, tabs }) => {
-  const [activeTab, setActiveTab ] = useState(tabs[0].id);
+  // Safe initialization
+  const [activeTab, setActiveTab ] = useState(() => tabs?.[0]?.id || '');
   const sliderRef = useRef(null);
 
-  const activeContent = tabs.find(t => t.id === activeTab);
+  // Fallback to first tab if activeTab is not found (handles prop updates/HMR)
+  const activeContent = tabs.find(t => t.id === activeTab) || tabs[0];
+
+  if (!activeContent) return null; // Safeguard if tabs is empty
 
   // Custom Arrows for Mobile Slider
   const PrevArrow = ({ onClick }) => (
@@ -51,7 +55,7 @@ const IndustrySpecs = ({ title, highlight, tabs }) => {
     <div className="p-8 rounded-2xl bg-[#0a0a1a] border border-purple-500/20 h-full">
       <div className="flex items-center gap-3 mb-4">
         <span className="text-3xl">{content.icon}</span>
-        <h3 className="text-2xl font-bold text-white">{content.title}</h3>
+        <h3 className="text-2xl font-bold text-purple-500/20">{content.title}</h3>
       </div>
       <p className="text-gray-400 mb-6 leading-relaxed">
         {content.description}
@@ -107,9 +111,9 @@ const IndustrySpecs = ({ title, highlight, tabs }) => {
              {/* Re-implementing the desktop card directly to match the original layout exactly if needed, 
                  or using the helper function but adapting grid cols */}
             <div className="p-8 rounded-2xl bg-[#0a0a1a] border border-purple-500/20">
-                <div className="flex items-center gap-3 mb-4">
+                <div className="flex items-center gap-3 mb-4 text-purple-500">
                   <span className="text-3xl">{activeContent.icon}</span>
-                  <h3 className="text-2xl font-bold text-white">{activeContent.title}</h3>
+                  <h3 className="text-2xl font-bold ">{activeContent.title}</h3>
                 </div>
                 <p className="text-gray-400 mb-6 leading-relaxed">
                   {activeContent.description}

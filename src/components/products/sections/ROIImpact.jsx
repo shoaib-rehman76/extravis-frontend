@@ -49,13 +49,23 @@ const ROIImpact = ({ title, description, cards }) => {
       key={index} 
       data-aos="zoom-in"
       data-aos-delay={index * 100}
-      className="group p-8 rounded-2xl bg-[#090A0C] border border-gray-800 hover:border-purple-500/30 flex flex-col items-center text-center transition-all duration-300 hover:bg-[#0d0d1f] h-full mx-2 md:mx-0"
+      className="group p-6 rounded-2xl bg-[#090A0C] border border-gray-800 hover:border-purple-500/30 flex flex-col items-center text-center transition-all duration-300 hover:bg-[#0d0d1f] h-full mx-2 md:mx-0"
     >
-      <div className={`w-12 h-12 rounded-lg flex items-center justify-center text-2xl mb-6 transition-transform group-hover:scale-110 ${colorClasses[card.color] || colorClasses.blue}`}>
+      <div className={`w-12 h-12 rounded-lg flex items-center justify-center text-2xl mb-4 transition-transform group-hover:scale-110 ${colorClasses[card.color] || colorClasses.blue}`}>
         {iconMap[card.icon]}
       </div>
       
       <h3 className="text-lg font-bold text-white mb-2">{card.title}</h3>
+      {card.value && (
+        <div className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 mb-2">
+          {card.value}
+        </div>
+      )}
+      {card.description && (
+        <p className="text-sm text-gray-400 leading-relaxed">
+          {card.description}
+        </p>
+      )}
     </div>
   );
 
