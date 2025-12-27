@@ -21,3 +21,7 @@ export { default as GrowthIcon } from './Icons/GrowthIcon';
 export { default as PeopleIcon } from './Icons/PeopleIcon';
 export { default as MailIcon } from './Icons/MailIcon';
 export { default as PhoneIcon } from './Icons/PhoneIcon';
+export { default as ArrowUpIcon } from './Icons/ArrowUpIcon';
+export { default as StarIcon } from './Icons/StarIcon';
+export { default as LocationIcon } from './Icons/LocationIcon';
+export { default as CheckIcon } from './Icons/CheckIcon';

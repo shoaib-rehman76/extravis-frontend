@@ -18,6 +18,16 @@
     --color-primary-background-dimmed:rgba(25, 25, 46, 0.36);
     --color-primary-icon-blue:#51A2FF;
     --color-grey-light:#D1D5DC;
+    --color-icon-purple:#C27AFF;
+    --color-purple-dimmed:rgba(173, 70, 255, 0.2);
+    --color-grey-1:rgba(255, 255, 255, 0.05);
+    --color-blue-light:rgba(0, 184, 219, 0.2);
+    --color-blue-bright:#53EAFD;
+    --color-primary-card:#13131A;
+    --color-primary-card-border:rgba(255, 255, 255, 0.1);
+    --color-input-bg:#0F0F18;
+    --color-input-border:rgba(173, 70, 255, 0.3);
+    --color-input-text:#99A1AF;
   }
 
   * {

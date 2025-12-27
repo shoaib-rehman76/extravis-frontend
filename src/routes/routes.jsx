@@ -6,6 +6,7 @@ import { Services } from "../pages/services/Services";
 import MontexProductPage from "../pages/monetX/MontexProductPage";
 import SupportxProductPage from "../pages/supportX/SupportxProductPage";
 import AboutUs from "../pages/aboutUs/AboutUs";
+import ContactUs from "../pages/contact";
 
 const RoutesIndex = () => {
   const routes = createBrowserRouter([
@@ -53,6 +54,10 @@ const RoutesIndex = () => {
     {
       path: "/about",
       element: <Layout><AboutUs /></Layout>,
+    },
+    {
+      path: "/contact-us",
+      element: <Layout><ContactUs /></Layout>,
     },
   ]);
 
